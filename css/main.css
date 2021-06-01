@@ -132,7 +132,7 @@ button {
 }
 .contacts__phone::before {
   position: absolute;
-  content: url("../../images/icons/phone.png");
+  content: url("/beats-solo/images/icons/phone.png");
   display: block;
   width: 14px;
   height: 14px;
@@ -179,13 +179,13 @@ button {
   height: 40px;
 }
 .product-features__item--noise::before {
-  content: url("../../images/icons/noise.png");
+  content: url("/beats-solo/images/icons/noise.png");
 }
 .product-features__item--charging::before {
-  content: url("../../images/icons/charging.png");
+  content: url("/beats-solo/images/icons/charging.png");
 }
 .product-features__item--plug::before {
-  content: url("../../images/icons/plug.png");
+  content: url("/beats-solo/images/icons/plug.png");
 }
 .product-features__text {
   margin-left: 48px;

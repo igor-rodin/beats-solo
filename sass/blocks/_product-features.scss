@@ -1,31 +1,36 @@
 .product-features {
   width: 120%;
-  &__list{
+
+  &__list {
     display: flex;
     justify-content: space-between;
   }
 
-  &__item{
+  &__item {
     flex: 1;
     position: relative;
-    &::before{
+
+    &::before {
       position: absolute;
       display: block;
       width: 40px;
       height: 40px;
     }
-    &--noise::before{
-      content: url("../../images/icons/noise.png");
+
+    &--noise::before {
+      content: url("/beats-solo/images/icons/noise.png");
     }
-    &--charging::before{
-      content: url("../../images/icons/charging.png");
+
+    &--charging::before {
+      content: url("/beats-solo/images/icons/charging.png");
     }
-    &--plug::before{
-      content: url("../../images/icons/plug.png");
+
+    &--plug::before {
+      content: url("/beats-solo/images/icons/plug.png");
     }
   }
 
-  &__text{
+  &__text {
     margin-left: 48px;
   }
 }
