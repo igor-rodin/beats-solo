@@ -1,20 +1,24 @@
 $bg-color-welcome: #F5F5F5;
-$welcome-font: 'Alegreya Sans', sans-serif;
+$welcome-font: 'Alegreya Sans',
+sans-serif;
 
 .welcome-section {
+  position: relative;
   background-color: $bg-color-welcome;
   padding-top: 30px;
   padding-bottom: 50px;
-  &__content{
+
+  &__content {
     display: flex;
     align-items: flex-start;
   }
-  &__body{
+
+  &__body {
     width: 45%;
     align-self: center;
   }
 
-  &__title{
+  &__title {
     font-weight: bold;
     font-size: 48px;
     line-height: 1.08;
@@ -22,7 +26,7 @@ $welcome-font: 'Alegreya Sans', sans-serif;
     margin-bottom: 20px;
   }
 
-  &__text{
+  &__text {
     flex: 1;
     font-family: $secondary-font;
     font-size: 21px;
@@ -31,7 +35,20 @@ $welcome-font: 'Alegreya Sans', sans-serif;
     margin-bottom: 35px;
   }
 
-  &__button{
+  &__button {
     margin-bottom: 70px;
+  }
+
+  &::after {
+    z-index: 1;
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 10px;
+    background-color: #C4C4C4;
+    transform: rotate(-45deg);
+    bottom: -4px;
+    right: 12%;
   }
 }
