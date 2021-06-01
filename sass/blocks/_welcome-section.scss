@@ -1,0 +1,37 @@
+$bg-color-welcome: #F5F5F5;
+$welcome-font: 'Alegreya Sans', sans-serif;
+
+.welcome-section {
+  background-color: $bg-color-welcome;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  &__content{
+    display: flex;
+    align-items: flex-start;
+  }
+  &__body{
+    width: 45%;
+    align-self: center;
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.08;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__text{
+    flex: 1;
+    font-family: $secondary-font;
+    font-size: 21px;
+    line-height: 1.19;
+    max-width: 340px;
+    margin-bottom: 35px;
+  }
+
+  &__button{
+    margin-bottom: 70px;
+  }
+}

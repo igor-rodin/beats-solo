@@ -1,0 +1,31 @@
+.product-features {
+  width: 120%;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    flex: 1;
+    position: relative;
+    &::before{
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+    &--noise::before{
+      content: url("../../images/icons/noise.png");
+    }
+    &--charging::before{
+      content: url("../../images/icons/charging.png");
+    }
+    &--plug::before{
+      content: url("../../images/icons/plug.png");
+    }
+  }
+
+  &__text{
+    margin-left: 48px;
+  }
+}

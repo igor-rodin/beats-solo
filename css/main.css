@@ -1,8 +1,244 @@
-body {
-  font-family: "Play", sans-serif;
+:root {
+  box-sizing: border-box;
 }
 
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-size: 16px;
+  color: #292929;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.19;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.welcome-section {
+  background-color: #F5F5F5;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.welcome-section__content {
+  display: flex;
+  align-items: flex-start;
+}
+.welcome-section__body {
+  width: 45%;
+  align-self: center;
+}
+.welcome-section__title {
   font-weight: bold;
   font-size: 48px;
+  line-height: 1.08;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.welcome-section__text {
+  flex: 1;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 21px;
+  line-height: 1.19;
+  max-width: 340px;
+  margin-bottom: 35px;
+}
+.welcome-section__button {
+  margin-bottom: 70px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.menu {
+  width: 640px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__item {
+  transition: color 0.5s;
+}
+.menu__item:hover {
+  color: #E01F3D;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+}
+.contacts__phone {
+  position: relative;
+}
+.contacts__phone::before {
+  position: absolute;
+  content: url("../../images/icons/phone.png");
+  display: block;
+  width: 14px;
+  height: 14px;
+  left: -20px;
+  top: 4px;
+}
+
+.product-avatar {
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+}
+
+.button {
+  display: inline-block;
+  padding: 21px 41px;
+  font-weight: bold;
+  line-height: 1.125;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background-color: #E01F3D;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+.button:hover {
+  background-color: #CA1B36;
+}
+
+.product-features {
+  width: 120%;
+}
+.product-features__list {
+  display: flex;
+  justify-content: space-between;
+}
+.product-features__item {
+  flex: 1;
+  position: relative;
+}
+.product-features__item::before {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.product-features__item--noise::before {
+  content: url("../../images/icons/noise.png");
+}
+.product-features__item--charging::before {
+  content: url("../../images/icons/charging.png");
+}
+.product-features__item--plug::before {
+  content: url("../../images/icons/plug.png");
+}
+.product-features__text {
+  margin-left: 48px;
+}
+
+.side-menu {
+  position: absolute;
+  right: 45px;
+  top: 25%;
+}
+.side-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.side-menu__item {
+  margin-bottom: 13px;
+}
+.side-menu__link {
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #292929;
+  opacity: 0.6;
+  transition: background-color 0.5s;
+}
+.side-menu__link::before {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #E01F3D;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.side-menu__item:hover .side-menu__link {
+  background-color: #E01F3D;
+}
+.side-menu__item:hover .side-menu__link::before {
+  opacity: 1;
+}
+.side-menu__item--active .side-menu__link {
+  background-color: #E01F3D;
+}
+.side-menu__item--active .side-menu__link::before {
+  opacity: 1;
+}
+.side-menu__item:last-child {
+  margin-bottom: 0;
 }
