@@ -1,0 +1,19 @@
+.features{
+  &__list{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__item {
+    position: relative;
+  }
+  &__item:not(:last-of-type)::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 260px;
+    top: 53.5px;
+    width: 67px;
+    height: 21px;
+    background: url("/beats-solo/images/icons/circles.png") center center no-repeat ;
+  }
+}

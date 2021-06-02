@@ -19,15 +19,10 @@ sans-serif;
   }
 
   &__title {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 1.08;
-    text-transform: uppercase;
     margin-bottom: 20px;
   }
 
   &__text {
-    flex: 1;
     font-family: $secondary-font;
     font-size: 21px;
     line-height: 1.19;
@@ -39,8 +34,11 @@ sans-serif;
     margin-bottom: 70px;
   }
 
+  &__product-features{
+    width: 120%;
+  }
+
   &::after {
-    z-index: 1;
     position: absolute;
     content: " ";
     display: block;

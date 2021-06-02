@@ -1,5 +1,5 @@
 .side-menu {
-  position: absolute;
+  position: fixed;
   right: 45px;
   top: 25%;
   $this: &;
@@ -11,7 +11,7 @@
   }
 
 
-  &__item {
+  &__item:not(:last-of-type) {
     margin-bottom: 13px;
   }
 
@@ -60,11 +60,4 @@
       opacity: 1;
     }
   }
-
-  &__item:last-child {
-    margin-bottom: 0;
-  }
-
-
-
 }

@@ -1,0 +1,22 @@
+.feature-section {
+  position: relative;
+  padding: 100px 0 90px;
+  text-align: center;
+  margin-bottom: 30px;
+  &__text {
+    max-width: 55%;
+    margin: 0 auto 60px;
+    color: $second-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 34.5px;
+    height: 34px;
+    background: url("/beats-solo/images/icons/feature-decor.png") center no-repeat;
+    bottom: -17px;
+    left: 10%;
+  }
+}
