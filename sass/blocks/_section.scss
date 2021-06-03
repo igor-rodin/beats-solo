@@ -1,9 +1,18 @@
-.section{
+.section {
+  position: relative;
+
   &__title {
     font-weight: bold;
     font-size: 48px;
     line-height: 1.08;
     text-transform: uppercase;
-    margin-bottom: 20px;
+
+    &--features {
+      margin-bottom: 20px;
+    }
+    &--reviews {
+      margin-bottom: 32px;
+    }
+
   }
 }
