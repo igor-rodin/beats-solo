@@ -1,13 +1,12 @@
 .side-menu {
   position: fixed;
-  right: 45px;
-  top: 25%;
+  right: 5%;
+  top: 240px;
   $this: &;
 
   &__list {
     display: flex;
     flex-direction: column;
-    align-items: start;
   }
 
 
@@ -18,46 +17,26 @@
   &__link {
     position: relative;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
+    border: 3px solid transparent;
     background-color: $main-color;
+    background-clip: content-box;
     opacity: 0.6;
-    transition: background-color 0.5s;
+    box-shadow: 0 0 0 1px rgba($color: #fff, $alpha: 0);
+    transition: 0.5s;
 
-    &::before {
-      position: absolute;
-      left: -4px;
-      top: -4px;
-      content: " ";
-      display: block;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      border: 1px solid $hover-text-color;
-      transition: all 0.5s;
-      opacity: 0;
-    }
   }
 
-  &__item:hover {
-    #{$this}__link {
-      background-color: $hover-text-color;
-    }
-
-    #{$this}__link::before {
-      opacity: 1;
-    }
+  &__item:hover #{$this}__link {
+    background-color: $hover-text-color;
+    box-shadow: 0 0 0 1px $hover-text-color;
   }
 
 
-  &__item--active {
-    #{$this}__link {
-      background-color: $hover-text-color;
-    }
-
-    #{$this}__link::before {
-      opacity: 1;
-    }
+  &__item--active #{$this}__link {
+    background-color: $hover-text-color;
+    box-shadow: 0 0 0 1px $hover-text-color;
   }
 }

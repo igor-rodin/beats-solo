@@ -1,34 +1,7 @@
 .product-features {
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
 
   &__item {
-    flex: 1;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      display: block;
-      width: 40px;
-      height: 40px;
-    }
-
-    &--noise::before {
-      content: url("/beats-solo/images/icons/noise.png");
-    }
-
-    &--charging::before {
-      content: url("/beats-solo/images/icons/charging.png");
-    }
-
-    &--plug::before {
-      content: url("/beats-solo/images/icons/plug.png");
-    }
-  }
-
-  &__text {
-    margin-left: 48px;
+    margin-right: 8px;
   }
 }

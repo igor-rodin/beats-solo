@@ -1,18 +1,9 @@
 .contacts {
   font-style: normal;
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.333;
 
-  &__phone {
-    position: relative;
-    &::before {
-      position: absolute;
-      content: url("/beats-solo/images/icons/phone.png");
-      display: block;
-      width: 14px;
-      height: 14px;
-      left: -20px;
-      top: 4px;
-    }
+  &__address{
+    margin-bottom: 3px;
   }
 }

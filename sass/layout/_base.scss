@@ -2,9 +2,18 @@ $main-color: #292929;
 $second-color: #666666;
 $hover-text-color:#E01F3D;
 $bg-color-welcome: #F5F5F5;
-$bg-review-card:  #F8FAF9;
-$welcome-font: 'Alegreya Sans', sans-serif;
-$secondary-font: 'Alegreya Sans',sans-serif;
+$bg-review-card: #F8FAF9;
+$bg-form-color: #181818;
+$input-text--color: #000;
+$form-text-color: #fff;
+$btn-bg-color: #E01F3D;
+$btn-hover-bg-color: #CA1B36;
+$btn-color: #fff;
+
+$welcome-font: 'Alegreya Sans',
+sans-serif;
+$secondary-font: 'Alegreya Sans',
+sans-serif;
 $base_font-size: 16px;
 
 :root {
@@ -33,6 +42,7 @@ body {
 }
 
 body {
+  position: relative;
   font-family: "Play", sans-serif;
   font-size: $base_font-size;
   color: $main-color;
@@ -67,11 +77,15 @@ button {
 .wrapper {
   overflow: hidden;
   width: 100%;
-  min-height: 100%;
 }
 
 
 .container {
   width: 940px;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }

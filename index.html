@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beats Solo</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div class="wrapper">
     <div class="main-content">
-      <section class="section welcome-section">
-        <div class="container">
+      <section class="welcome-section">
+        <div class="container welcome-section__container">
           <header class="main-header">
             <a href="./" class="logo">
               <img src="./images/logo.png" alt="beats logo" class="logo__image">
@@ -25,7 +21,7 @@
                   <a href="#" class="menu_link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu_link">Наушники</a>
+                  <a href="#features" class="menu_link">Наушники</a>
                 </li>
                 <li class="menu__item">
                   <a href="#" class="menu_link">Команда</a>
@@ -34,19 +30,22 @@
                   <a href="#" class="menu_link">Цвета</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu_link">Отзывы</a>
+                  <a href="#reviews" class="menu_link">Отзывы</a>
                 </li>
                 <li class="menu__item">
                   <a href="#" class="menu_link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu_link">Контакты</a>
+                  <a href="#form" class="menu_link">Контакты</a>
                 </li>
               </ul>
             </nav>
-            <address class="contacts main-header__contacts">
-              <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
-            </address>
+            <a href="tel:+78009039090" class="phone-number">
+              <span class="phone-number__icon">
+                <img src="./images/icons/phone.png" alt="phone icon">
+              </span>
+              <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
           </header>
           <div class="welcome-section__content">
             <div class="welcome-section__body">
@@ -58,74 +57,85 @@
                 </p>
               </div>
               <a href="#" class="button welcome-section__button">ЗАКАЗАТЬ</a>
-              <div class="product-features welcome-section__product-features">
-                <ul class="product-features__list">
-                  <li class="product-features__item product-features__item--noise">
-                    <div class="product-features__text">
-                      Безупречный звук
-                    </div>
-                  </li>
-                  <li class="product-features__item product-features__item--charging">
-                    <div class="product-features__text">
-                      До 40 часов работы
-                    </div>
-                  </li>
-                  <li class="product-features__item product-features__item--plug">
-                    <div class="product-features__text">
-                      Технология Fast Fuel
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="product-avatar welcome-section__product-image">
               <img src="./images/beats-welcome.png" alt="beats solo" class="product-avatar__image">
             </div>
           </div>
+          <ul class="product-features">
+            <li class="product-features__item product-feature">
+              <div class="product-feature__icon">
+                <img src="./images/icons/noise.png" alt="noise icon">
+              </div>
+              <div class="product-feature__text">
+                Безупречный звук
+              </div>
+            </li>
+            <li class="product-features__item product-feature">
+              <div class="product-feature__icon">
+                <img src="./images/icons/charging.png" alt="charging icon">
+              </div>
+              <div class="product-feature__text">
+                До 40 часов работы
+              </div>
+            </li>
+            <li class="product-features__item product-feature">
+              <div class="product-feature__icon">
+                <img src="./images/icons/plug.png" alt="plug icon">
+              </div>
+              <div class="product-feature__text">
+                Технология Fast Fuel
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="section feature-section">
+      <section id="features" class="section advantages-section">
         <div class="container">
           <h2 class="section__title section__title--features">почему beats solo 3?</h2>
-          <div class="feature-section__text"><p>
+          <div class="advantages-section__text"><p>
             Процессор W1 работает невероятно эффективно и позволяет легко
             подключать наушники к различным устройствам Apple.
           </p></div>
-          <div class="feature-section__features">
-            <ul class="features__list">
-              <li class="feature feature--battery features__item">
-                <div class="feature__image"></div>
-                <div class="feature__budy">
-                  <h3 class="feature__title">40 часов работы</h3>
-                  <div class="feature__text"><p>Наушники Beats Solo3 могут работать
+          <ul class="advantages">
+              <li class="advantages__item advantage">
+                <div class="advantage__image">
+                  <img class="advantage__image-icon" src="./images/icons/battery.png" alt="batery icon">
+                </div>
+                <div class="advantage__body">
+                  <h3 class="advantage__title">40 часов работы</h3>
+                  <div class="advantage__text"><p>Наушники Beats Solo3 могут работать
                   до 40 часов без подзарядки, чтобы вы
                   могли пользоваться ими каждый день.</p></div>
                 </div>
               </li>
-              <li class="feature feature--sound features__item">
-                <div class="feature__image"></div>
-                <div class="feature__budy">
-                  <h3 class="feature__title">Фирменное звучание</h3>
-                  <div class="feature__text"><p>Фирменное звучание Beats в наушниках
+              <li class="advantages__item advantage">
+                <div class="advantage__image">
+                  <img class="advantage__image-icon" src="./images/icons/sound.png" alt="sound icon">
+                </div>
+                <div class="advantage__body">
+                  <h3 class="advantage__title">Фирменное звучание</h3>
+                  <div class="advantage__text"><p>Фирменное звучание Beats в наушниках
                   с технологией Bluetooth класса
                   1 будет сопровождать вас повсюду —
                   куда бы вы ни отправились.</p></div>
                 </div>
               </li>
-              <li class="feature feature--time features__item">
-                <div class="feature__image"></div>
-                <div class="feature__budy">
-                  <h3 class="feature__title">Быстрая зарядка</h3>
-                  <div class="feature__text"><p>Благодаря технологии Fast Fuel
+              <li class="advantages__item advantage">
+                <div class="advantage__image">
+                  <img class="advantage__image-icon" src="./images/icons/time.png" alt="time icon">
+                </div>
+                <div class="advantage__body">
+                  <h3 class="advantage__title">Быстрая зарядка</h3>
+                  <div class="advantage__text"><p>Благодаря технологии Fast Fuel
                   всего через 5 минут зарядки вы
                   сможете слушать музыку ещё 3 часа.</p></div>
                 </div>
               </li>
-            </ul>
-          </div>
+          </ul>
         </div>
       </section>
-      <section class="section reviews-section">
+      <section id="reviews" class="section reviews-section">
         <div class="container ">
           <h2 class="section__title section__title--reviews">отзывы</h2>
           <div class="reviews">
@@ -150,20 +160,130 @@
           </div>
         </div>
       </section>
+      <section id="form" class="section form-section">
+        <div class="container">
+          <h2 class="section__title form-section__title">закажите доставку</h2>
+          <form class="form">
+            <div class="form__inner">
+              <div class="form__column">
+                <div class="form__row">
+                  <label class="form-element form__row-element">
+                    <div class="form-element__text">Имя</div>
+                    <input class="form-element__input" type="text">
+                  </label>
+                  <label class="form-element form__row-element form__row-element--active">
+                    <div class="form-element__text">Телефон</div>
+                    <input class="form-element__input" type="text">
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label class="form-element form__row-element">
+                    <div class="form-element__text">Улица</div>
+                    <input class="form-element__input" type="text">
+                  </label>
+                </div>
+                <div class="form__row">
+                    <label class="form-element form__row-element">
+                      <div class="form-element__text">Дом</div>
+                      <input class="form-element__input" type="text">
+                    </label>
+                    <label class="form-element form__row-element">
+                      <div class="form-element__text">Корпус</div>
+                      <input class="form-element__input" type="text">
+                    </label>
+                    <label class="form-element form__row-element">
+                      <div class="form-element__text">Квартира</div>
+                      <input class="form-element__input" type="text">
+                    </label>
+                    <label class="form-element form__row-element">
+                      <div class="form-element__text">Этаж</div>
+                      <input class="form-element__input" type="text">
+                    </label>
+                </div>
+              </div>
+              <div class="form__column">
+                <div class="form__row">
+                  <label class="form-element form__row-element">
+                    <div class="form-element__text">Комментарий</div>
+                    <textarea class="form-element__input form-element__input--textarea "name="comments" ></textarea>
+                  </label>
+                </div>
+                <div class="form__row form__row--controls" >
+                  <label class="form-control form__row--control">
+                    <input class="form-control__elem" type="radio"  name="options">
+                    <div class="form-control__visual"></div>
+                    <div class="form-control__text">Потребуется сдача</div>
+                  </label>
+                  <label class="form-control form__row--control">
+                    <input class="form-control__elem" type="radio"  name="options" checked>
+                    <div class="form-control__visual"></div>
+                    <div class="form-control__text">Оплата картой</div>
+                  </label>
+                </div>
+                <div class="form__row ">
+                  <label class="form-control form-control--checkbox form__row-control">
+                    <input class="form-control__elem" type="checkbox" name="call" checked>
+                    <div class="form-control__visual"></div>
+                    <div class="form-control__text">Не перезванивать</div>
+                  </label>
+                </div>
+                <div class="form__row form__row--buttons">
+                  <button class="button" type="submit">ЗАКАЗАТЬ</button>
+                  <button class="button button--theme-transparent" type="reset">Очистить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="map" class="section map-section">
+        <div class="container">
+          <div class="map bottom-section__map"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <address class="contacts footer__contacts">
+            <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div>
+            <a href="tel:+78009039090" class="phone-number">
+              <span class="phone-number__icon">
+                <img src="./images/icons/phone.png" alt="phone icon">
+              </span>
+              <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+          </address>
+          <div class="socials footer__socials">
+            <ul class="socials__list">
+              <li class="socials__item socials__item--vk">
+                <a href="#" class="socials__link"></a>
+              </li>
+              <li class="socials__item socials__item--fb">
+                <a href="#" class="socials__link"></a>
+              </li>
+              <li class="socials__item socials__item--insta">
+                <a href="#" class="socials__link"></a>
+              </li>
+              <li class="socials__item socials__item--tel">
+                <a href="#" class="socials__link"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-    <nav class="side-menu">
-      <ul class="side-menu__list">
-        <li class="side-menu__item side-menu__item--active"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-        <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-      </ul>
-    </nav>
   </div>
+  <nav class="side-menu">
+    <ul class="side-menu__list">
+      <li class="side-menu__item side-menu__item--active"><a href="./" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#features" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#reviews" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#form" class="side-menu__link"></a></li>
+      <li class="side-menu__item"><a href="#map" class="side-menu__link"></a></li>
+    </ul>
+  </nav>
 </body>
 </html>

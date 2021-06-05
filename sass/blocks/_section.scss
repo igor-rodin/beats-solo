@@ -1,5 +1,7 @@
 .section {
   position: relative;
+  height: 100vh;
+  min-height: 652px;
 
   &__title {
     font-weight: bold;
@@ -10,6 +12,7 @@
     &--features {
       margin-bottom: 20px;
     }
+
     &--reviews {
       margin-bottom: 32px;
     }

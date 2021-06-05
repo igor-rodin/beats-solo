@@ -1,7 +1,16 @@
 .welcome-section {
+  height: 100vh;
+  min-height: 652px;
   background-color: $bg-color-welcome;
   padding-top: 30px;
   padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
 
   &__content {
     display: flex;
@@ -27,10 +36,6 @@
 
   &__button {
     margin-bottom: 70px;
-  }
-
-  &__product-features{
-    width: 120%;
   }
 
   &::after {

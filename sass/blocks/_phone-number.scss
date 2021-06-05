@@ -1,0 +1,20 @@
+.phone-number {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  &:hover {
+    color: $hover-text-color;
+  }
+}

@@ -1,11 +1,5 @@
-$btn-bg-color: #E01F3D;
-$btn-hover-bg-color: #CA1B36;
-$btn-color: #fff;
-
-
 .button {
   display: inline-block;
-  // height: 55px;
   padding: 21px 41px;
   font-weight: bold;
   line-height: 1.125;
@@ -16,6 +10,18 @@ $btn-color: #fff;
   transition: background-color 0.5s;
 
   &:hover{
+    cursor: pointer;
     background-color: $btn-hover-bg-color;
+  }
+
+  &--theme-transparent{
+    text-transform: capitalize;
+    background-color: transparent;
+    font-weight: normal;
+    padding-left: 15px;
+    &:hover{
+      background-color: transparent;
+      color: $hover-text-color;
+    }
   }
 }
