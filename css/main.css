@@ -665,6 +665,9 @@ button {
   line-height: 1.08;
   text-transform: uppercase;
 }
+.section__title--welcome {
+  margin-bottom: 22px;
+}
 .section__title--features {
   margin-bottom: 20px;
 }
