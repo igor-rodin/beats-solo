@@ -897,6 +897,8 @@ button {
   margin-bottom: 12px;
 }
 .form__row--controls {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 22px;
   padding-bottom: 10px;
 }
