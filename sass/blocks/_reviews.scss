@@ -1,0 +1,63 @@
+.reviews {
+  &__card {
+    position: relative;
+    padding: 42px 110px 42px 42px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: $bg-review-card;
+    margin-bottom: 15px;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 83px;
+      height: 83px;
+      border-radius: 50%;
+      top: -61px;
+      left: calc(50% - 37px);
+      background-color: #fff;
+    }
+  }
+
+  &__user-avatar {
+    margin-right: 40px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    margin-bottom: 38px;
+    color: $second-color;
+  }
+
+  &__user-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  &__picker {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      margin-right: 6px;
+
+      &:hover {
+        border: 4px solid $hover-text-color;
+      }
+    }
+  }
+}

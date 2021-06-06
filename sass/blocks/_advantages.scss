@@ -1,0 +1,29 @@
+.advantages{
+  display: flex;
+  justify-content: flex-start;
+  
+  &__item {
+    flex:1;
+    position: relative;
+    padding: 0 3%;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+  &__item:not(:last-of-type)::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 53.5px;
+    width: 67px;
+    height: 21px;
+    transform: translateX(50%);
+    background: url("/beats-solo/images/icons/circles.png") center center no-repeat ;
+  }
+}

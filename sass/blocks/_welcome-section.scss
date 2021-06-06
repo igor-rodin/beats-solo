@@ -1,0 +1,47 @@
+.welcome-section {
+  background-color: $bg-color-welcome;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__body {
+    width: 45%;
+    align-self: center;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: $secondary-font;
+    font-size: 21px;
+    line-height: 1.19;
+    max-width: 340px;
+    margin-bottom: 35px;
+  }
+
+  &::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 10px;
+    background-color: #C4C4C4;
+    transform: rotate(-45deg);
+    bottom: -4px;
+    right: 12%;
+  }
+}

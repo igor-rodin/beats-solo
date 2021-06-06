@@ -1,0 +1,19 @@
+.menu {
+  width: 640px;
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 1.67;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    transition: color 0.5s;
+  }
+
+  &__item:hover {
+    color: $hover-text-color;
+  }
+}

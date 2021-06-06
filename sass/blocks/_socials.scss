@@ -1,0 +1,44 @@
+.socials {
+  $this: &;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @each $social in (vk, fb, insta, tel) {
+      &--#{$social} {
+        #{$this}__link {
+          background: url('/beats-solo/images/icons/socials/#{$social}.png') center no-repeat;
+        }
+      }
+    }
+
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

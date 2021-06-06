@@ -1,0 +1,42 @@
+.side-menu {
+  position: fixed;
+  right: 5%;
+  top: 240px;
+  $this: &;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 6px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background-color: $main-color;
+    background-clip: content-box;
+    opacity: 0.6;
+    box-shadow: 0 0 0 1px rgba($color: #fff, $alpha: 0);
+    transition: 0.5s;
+
+  }
+
+  &__item:hover #{$this}__link {
+    background-color: $hover-text-color;
+    box-shadow: 0 0 0 1px $hover-text-color;
+  }
+
+
+  &__item--active #{$this}__link {
+    background-color: $hover-text-color;
+    box-shadow: 0 0 0 1px $hover-text-color;
+  }
+}

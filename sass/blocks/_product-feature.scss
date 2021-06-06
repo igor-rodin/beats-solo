@@ -1,0 +1,14 @@
+.product-feature {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 41px;
+    height: 41px;
+    margin-right: 11px;
+  }
+
+  &__text {
+    max-width: 110px;
+  }
+}

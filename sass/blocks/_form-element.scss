@@ -1,0 +1,30 @@
+.form-element {
+  text-align: left;
+
+  &__text {
+    margin-bottom: 6px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 18px 12px 14px;
+    font-size: 14px;
+    line-height: 1.428;
+    background-color: #fff;
+    outline: none;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.5s;
+
+    &--textarea{
+      resize: none;
+      height: 150px;
+    }
+  }
+
+  &--active &__input,
+  &:hover &__input {
+    border: 3px solid $hover-text-color;
+    outline: none;
+  }
+}

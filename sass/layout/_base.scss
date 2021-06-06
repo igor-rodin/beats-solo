@@ -1,0 +1,91 @@
+$main-color: #292929;
+$second-color: #666666;
+$hover-text-color:#E01F3D;
+$bg-color-welcome: #F5F5F5;
+$bg-review-card: #F8FAF9;
+$bg-form-color: #181818;
+$input-text--color: #000;
+$form-text-color: #fff;
+$btn-bg-color: #E01F3D;
+$btn-hover-bg-color: #CA1B36;
+$btn-color: #fff;
+
+$welcome-font: 'Alegreya Sans',
+sans-serif;
+$secondary-font: 'Alegreya Sans',
+sans-serif;
+$base_font-size: 16px;
+
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "Play", sans-serif;
+  font-size: $base_font-size;
+  color: $main-color;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.19;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}

@@ -1,0 +1,47 @@
+.form {
+  &__inner {
+    display: flex;
+  }
+
+  &__column {
+    flex: 1;
+
+    &:first-of-type {
+      margin-right: 18px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 12px;
+
+    &--controls {
+      flex-wrap: wrap;
+      padding-top: 22px;
+      padding-bottom: 10px;
+    }
+
+    &--buttons {
+      margin-top: 48px;
+    }
+  }
+
+  &__row-element {
+    flex: 1;
+    margin-right: 14px;
+  }
+
+  &__row-element:last-of-type {
+    margin-right: 0;
+  }
+
+
+
+  &__row--control {
+    margin-right: 24px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

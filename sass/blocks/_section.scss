@@ -1,0 +1,24 @@
+.section {
+  position: relative;
+  height: 100vh;
+  min-height: 652px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.08;
+    text-transform: uppercase;
+
+    &--welcome {
+      margin-bottom: 22px;
+    }
+    &--features {
+      margin-bottom: 20px;
+    }
+
+    &--reviews {
+      margin-bottom: 32px;
+    }
+
+  }
+}
