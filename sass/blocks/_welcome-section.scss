@@ -1,6 +1,4 @@
 .welcome-section {
-  height: 100vh;
-  min-height: 652px;
   background-color: $bg-color-welcome;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -14,12 +12,13 @@
 
   &__content {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
   }
 
   &__body {
     width: 45%;
     align-self: center;
+    padding-bottom: 70px;
   }
 
   &__title {
@@ -32,10 +31,6 @@
     line-height: 1.19;
     max-width: 340px;
     margin-bottom: 35px;
-  }
-
-  &__button {
-    margin-bottom: 70px;
   }
 
   &::after {

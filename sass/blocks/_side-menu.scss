@@ -11,7 +11,7 @@
 
 
   &__item:not(:last-of-type) {
-    margin-bottom: 13px;
+    margin-bottom: 6px;
   }
 
   &__link {
@@ -20,7 +20,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     background-color: $main-color;
     background-clip: content-box;
     opacity: 0.6;

@@ -426,8 +426,6 @@ button {
 }
 
 .welcome-section {
-  height: 100vh;
-  min-height: 652px;
   background-color: #F5F5F5;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -449,15 +447,16 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .welcome-section__body {
   width: 45%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-bottom: 70px;
 }
 .welcome-section__title {
   margin-bottom: 20px;
@@ -468,9 +467,6 @@ button {
   line-height: 1.19;
   max-width: 340px;
   margin-bottom: 35px;
-}
-.welcome-section__button {
-  margin-bottom: 70px;
 }
 .welcome-section::after {
   position: absolute;
@@ -626,7 +622,7 @@ button {
           flex-direction: column;
 }
 .side-menu__item:not(:last-of-type) {
-  margin-bottom: 13px;
+  margin-bottom: 6px;
 }
 .side-menu__link {
   position: relative;
@@ -634,7 +630,7 @@ button {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 5px solid transparent;
   background-color: #292929;
   background-clip: content-box;
   opacity: 0.6;
@@ -892,19 +888,20 @@ button {
           flex: 1;
 }
 .form__column:first-of-type {
-  margin-right: 26px;
+  margin-right: 18px;
 }
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .form__row--controls {
-  margin-top: 40px;
+  padding-top: 22px;
+  padding-bottom: 10px;
 }
 .form__row--buttons {
-  margin-top: 65px;
+  margin-top: 48px;
 }
 .form__row-element {
   -webkit-box-flex: 1;
@@ -930,7 +927,7 @@ button {
 }
 .form-element__input {
   width: 100%;
-  padding: 18px 12px;
+  padding: 18px 12px 14px;
   font-size: 14px;
   line-height: 1.428;
   background-color: #fff;
@@ -942,7 +939,7 @@ button {
 }
 .form-element__input--textarea {
   resize: none;
-  height: 162px;
+  height: 150px;
 }
 .form-element--active .form-element__input, .form-element:hover .form-element__input {
   border: 3px solid #E01F3D;

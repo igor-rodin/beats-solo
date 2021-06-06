@@ -7,20 +7,21 @@
     flex: 1;
 
     &:first-of-type {
-      margin-right: 26px;
+      margin-right: 18px;
     }
   }
 
   &__row {
     display: flex;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 
     &--controls {
-      margin-top: 40px;
+      padding-top: 22px;
+      padding-bottom: 10px;
     }
 
     &--buttons {
-      margin-top: 65px;
+      margin-top: 48px;
     }
   }
 
