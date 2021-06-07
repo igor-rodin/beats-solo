@@ -1,23 +1,23 @@
 .reviews {
   &__card {
     position: relative;
-    padding: 42px 110px 42px 42px;
+    padding: px2rem(42) px2rem(110) px2rem(42) px2rem(42);
     display: flex;
     align-items: center;
     text-align: left;
     background-color: $bg-review-card;
-    margin-bottom: 15px;
+    margin-bottom: px2rem(15);
     overflow: hidden;
 
     &::before {
       position: absolute;
       content: "";
       display: block;
-      width: 83px;
-      height: 83px;
+      width: px2rem(83);
+      height: px2rem(83);
       border-radius: 50%;
-      top: -61px;
-      left: calc(50% - 37px);
+      top: px2rem(-61);
+      left: calc(50% - #{px2rem(33)});
       background-color: #fff;
     }
   }

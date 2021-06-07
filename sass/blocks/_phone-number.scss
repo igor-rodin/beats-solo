@@ -3,18 +3,18 @@
   align-items: center;
 
   &__icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 6px;
+    width: px2rem(14);
+    height: px2rem(14);
+    margin-right: px2rem(6);
   }
 
   &__text {
     font-style: normal;
-    font-size: 18px;
-    line-height: 1.17;
-  }
+    font-size: px2rem(18);
+        line-height: 1.17;
+    }
 
-  &:hover {
-    color: $hover-text-color;
+    &:hover {
+      color: $hover-text-color;
+    }
   }
-}

@@ -1,7 +1,7 @@
 .side-menu {
   position: fixed;
   right: 5%;
-  top: 240px;
+  top: px2rem(240);
   $this: &;
 
   &__list {
@@ -11,16 +11,16 @@
 
 
   &__item:not(:last-of-type) {
-    margin-bottom: 6px;
+    margin-bottom: px2rem(6);
   }
 
   &__link {
     position: relative;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: px2rem(16);
+    height: px2rem(16);
     border-radius: 50%;
-    border: 5px solid transparent;
+    border: px2rem(5) solid transparent;
     background-color: $main-color;
     background-clip: content-box;
     opacity: 0.6;

@@ -1,10 +1,10 @@
 .advantages-section {
-  padding: 100px 0 90px;
+  padding: px2rem(100) 0 px2rem(90);
   text-align: center;
-  
+
   &__text {
     max-width: 55%;
-    margin: 0 auto 60px;
+    margin: 0 auto px2rem(60);
     color: $second-color;
   }
 
@@ -12,10 +12,10 @@
     position: absolute;
     content: "";
     display: block;
-    width: 34.5px;
-    height: 34px;
+    width: px2rem(34.5);
+    height: px2rem(34);
     background: url("/beats-solo/images/icons/feature-decor.png") center no-repeat;
-    bottom: -17px;
+    bottom: px2rem(-17);
     left: 10%;
   }
 }

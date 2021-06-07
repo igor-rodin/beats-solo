@@ -7,7 +7,7 @@
   }
 
   &__item {
-    margin-right: 10px;
+    margin-right: px2rem(10);
 
     &:last-of-type {
       margin-right: 0;
@@ -26,9 +26,9 @@
   &__link {
     position: relative;
     display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: px2rem(30);
+    height: px2rem(30);
+    line-height: px2rem(30);
 
     &::after {
       content: '';
@@ -37,8 +37,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 30px;
-      height: 30px;
+      width: px2rem(30);
+      height: px2rem(30);
     }
   }
 }

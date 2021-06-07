@@ -1,9 +1,9 @@
 .contacts {
   font-style: normal;
-  font-size: 18px;
+  font-size: px2rem(18);
   line-height: 1.333;
 
-  &__address{
-    margin-bottom: 3px;
+    &__address {
+      margin-bottom: px2rem(3);
+    }
   }
-}

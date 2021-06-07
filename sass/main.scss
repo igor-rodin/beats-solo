@@ -1,6 +1,8 @@
+@import "./helpers";
 @import "./layout/fonts";
 @import "./layout/normalize";
 @import "./layout/base";
+@import "./blocks/section";
 @import "./blocks/welcome-section";
 @import "./blocks/phone-number";
 @import "./blocks/main-header";
@@ -11,7 +13,6 @@
 @import "./blocks/product-features";
 @import "./blocks/product-feature";
 @import "./blocks/side-menu";
-@import "./blocks/section";
 @import "./blocks/advantages-section";
 @import "./blocks/advantages";
 @import "./blocks/advantage";

@@ -1,21 +1,21 @@
 .avatar {
-  width: 254px;
-  height: 263px;
+  width: px2rem(254);
+  height: px2rem(263);
 
   &-picker {
-    width: 78px;
-    height: 78px;
-    border: 4px solid transparent;
+    width: px2rem(78);
+    height: px2rem(78);
+    border: px2rem(4) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     transition: border-color 0.5s;
-    
-    &__link{
+
+    &__link {
       display: block;
     }
 
     &--active {
-      border: 4px solid $hover-text-color;
+      border: px2rem(4) solid $hover-text-color;
     }
   }
 }

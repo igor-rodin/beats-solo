@@ -5,19 +5,19 @@
 
   &__title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: px2rem(48);
     line-height: 1.08;
     text-transform: uppercase;
 
     &--welcome {
-      margin-bottom: 22px;
+      margin-bottom: px2rem(22);
     }
     &--features {
-      margin-bottom: 20px;
+      margin-bottom: px2rem(20);
     }
 
     &--reviews {
-      margin-bottom: 32px;
+      margin-bottom: px2rem(32);
     }
 
   }

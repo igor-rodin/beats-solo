@@ -2,29 +2,29 @@
   text-align: left;
 
   &__text {
-    margin-bottom: 6px;
+    margin-bottom: px2rem(6);
   }
 
   &__input {
     width: 100%;
-    padding: 18px 12px 14px;
-    font-size: 14px;
+    padding: px2rem(18) px2rem(12) px2rem(14);
+    font-size: px2rem(14);
     line-height: 1.428;
     background-color: #fff;
     outline: none;
-    border: 3px solid transparent;
-    border-radius: 4px;
+    border: px2rem(3) solid transparent;
+    border-radius: px2rem(4);
     transition: border-color 0.5s;
 
-    &--textarea{
+    &--textarea {
       resize: none;
-      height: 150px;
+      height: px2rem(150);
     }
   }
 
   &--active &__input,
   &:hover &__input {
-    border: 3px solid $hover-text-color;
+    border: px2rem(3) solid $hover-text-color;
     outline: none;
   }
 }

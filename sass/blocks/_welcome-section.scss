@@ -1,7 +1,7 @@
 .welcome-section {
   background-color: $bg-color-welcome;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: px2rem(30);
+  padding-bottom: px2rem(50);
 
   &__container {
     display: flex;
@@ -18,30 +18,26 @@
   &__body {
     width: 45%;
     align-self: center;
-    padding-bottom: 70px;
-  }
-
-  &__title {
-    margin-bottom: 20px;
+    padding-bottom: px2rem(70);
   }
 
   &__text {
     font-family: $secondary-font;
-    font-size: 21px;
+    font-size: px2rem(21);
     line-height: 1.19;
-    max-width: 340px;
-    margin-bottom: 35px;
+    max-width: px2rem(340);
+    margin-bottom: px2rem(35);
   }
 
   &::after {
     position: absolute;
     content: " ";
     display: block;
-    width: 46px;
-    height: 10px;
+    width: px2rem(46);
+    height: px2rem(10);
     background-color: #C4C4C4;
     transform: rotate(-45deg);
-    bottom: -4px;
+    bottom: px2rem(-4);
     right: 12%;
   }
 }

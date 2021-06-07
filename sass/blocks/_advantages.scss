@@ -1,9 +1,9 @@
-.advantages{
+.advantages {
   display: flex;
   justify-content: flex-start;
-  
+
   &__item {
-    flex:1;
+    flex: 1;
     position: relative;
     padding: 0 3%;
 
@@ -11,19 +11,20 @@
       padding-left: 0;
     }
 
-    &:last-child{
+    &:last-child {
       padding-right: 0;
     }
   }
-  &__item:not(:last-of-type)::after{
+
+  &__item:not(:last-of-type)::after {
     content: " ";
     position: absolute;
     display: block;
-    right: 0px;
-    top: 53.5px;
-    width: 67px;
-    height: 21px;
+    right: 0;
+    top: px2rem(53.5);
+    width: px2rem(67);
+    height: px2rem(21);
     transform: translateX(50%);
-    background: url("/beats-solo/images/icons/circles.png") center center no-repeat ;
+    background: url("/beats-solo/images/icons/circles.png") center center no-repeat;
   }
 }

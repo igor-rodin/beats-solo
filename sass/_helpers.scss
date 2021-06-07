@@ -1,0 +1,6 @@
+// Convert px to rem
+@function px2rem($size_px, $base_fsz: 16){
+  @if $size_px != 1 {
+    @return #{$size_px/$base_fsz}rem 
+  }
+}

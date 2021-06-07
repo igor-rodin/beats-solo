@@ -3,12 +3,12 @@
   align-items: center;
 
   &__icon {
-    width: 41px;
-    height: 41px;
-    margin-right: 11px;
+    width: px2rem(41);
+    height: px2rem(41);
+    margin-right: px2rem(11);
   }
 
   &__text {
-    max-width: 110px;
+    max-width: px2rem(110);
   }
 }

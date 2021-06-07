@@ -1,16 +1,16 @@
 .reviews-section {
-  padding: 68px 0 64px;
+  padding: px2rem(68) 0 px2rem(64);
   text-align: center;
 
   &::after {
     position: absolute;
     content: "";
     display: block;
-    width: 35px;
-    height: 35px;
+    width: px2rem(35);
+    height: px2rem(35);
     border-radius: 50%;
     background-color: #868686;
-    bottom: -18px;
+    bottom: px2rem(-18);
     left: 12%;
   }
 }

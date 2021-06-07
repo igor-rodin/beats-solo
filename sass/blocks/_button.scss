@@ -1,25 +1,26 @@
 .button {
   display: inline-block;
-  padding: 21px 41px;
+  padding: px2rem(21) px2rem(41);
   font-weight: bold;
   line-height: 1.125;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: px2rem(100);
   background-color: $btn-bg-color;
   color: $btn-color;
   transition: background-color 0.5s;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     background-color: $btn-hover-bg-color;
   }
 
-  &--theme-transparent{
+  &--theme-transparent {
     text-transform: capitalize;
     background-color: transparent;
     font-weight: normal;
-    padding-left: 15px;
-    &:hover{
+    padding-left: px2rem(15);
+
+    &:hover {
       background-color: transparent;
       color: $hover-text-color;
     }
