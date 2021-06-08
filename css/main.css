@@ -1015,7 +1015,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .advantage__text {
-    max-width: 84%;
+    max-width: 92%;
     margin: 0;
   }
 }
