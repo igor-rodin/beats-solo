@@ -538,7 +538,7 @@ button {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .welcome-section__body {
     width: 84%;
   }
