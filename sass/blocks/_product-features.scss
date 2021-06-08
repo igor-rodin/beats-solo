@@ -4,4 +4,8 @@
   &__item {
     margin-right: px2rem(8);
   }
+  
+  @include mq-medium{
+    display: none;
+  }
 }

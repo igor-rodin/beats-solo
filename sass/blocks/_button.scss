@@ -25,4 +25,10 @@
       color: $hover-text-color;
     }
   }
+
+  @include mq-small {
+    font-size: px2rem(19);
+    line-height: 0.947;
+    padding: px2rem(21) px2rem(36);
+  }
 }

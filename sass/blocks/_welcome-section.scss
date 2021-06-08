@@ -3,6 +3,20 @@
   padding-top: px2rem(30);
   padding-bottom: px2rem(50);
 
+  @include mq-medium {
+    padding-top: 0;
+    padding-left: px2rem(22);
+    padding-right: px2rem(22);
+    padding-bottom: px2rem(172);
+  }
+
+  @include mq-small {
+    padding-top: 0;
+    padding-left: px2rem(10);
+    padding-right: px2rem(10);
+    padding-bottom: px2rem(72);
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -13,12 +27,26 @@
   &__content {
     display: flex;
     justify-content: space-between;
+
+    @include mq-medium {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__body {
     width: 45%;
     align-self: center;
     padding-bottom: px2rem(70);
+
+    @include mq-medium {
+      width: 94%;
+      text-align: center;
+    }
+
+    @include mq-medium {
+      width: 84%;
+    }
   }
 
   &__text {
@@ -26,7 +54,26 @@
     font-size: px2rem(21);
     line-height: 1.19;
     max-width: px2rem(340);
-    margin-bottom: px2rem(35);
+    margin-bottom: px2rem(36);
+
+    @include mq-medium {
+      max-width: px2rem(370);
+      margin: 0 auto px2rem(23);
+      max-width: px2rem(290);
+      font-size: px2rem(18);
+      line-height: 1.11;
+    }
+  }
+
+  &__product-image {
+    @include mq-medium {
+      order: -1;
+      margin-bottom: px2rem(64);
+    }
+
+    @include mq-small {
+      margin-bottom: px2rem(49);
+    }
   }
 
   &::after {

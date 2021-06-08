@@ -4,6 +4,10 @@
   top: px2rem(240);
   $this: &;
 
+  @include mq-medium {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;

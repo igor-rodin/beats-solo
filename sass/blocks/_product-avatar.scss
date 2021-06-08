@@ -1,5 +1,11 @@
 .product-avatar {
   width: px2rem(490);
   height: px2rem(490);
+
+  @include mq-medium {
+    width: px2rem(324);
+    height: px2rem(324);
+  }
+
   border-radius: 50%;
 }

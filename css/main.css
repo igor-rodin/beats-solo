@@ -413,7 +413,7 @@ button {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 58.75rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,11 +427,22 @@ button {
           justify-content: center;
   height: 100%;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: px2 rem(728);
+  }
+}
 
 .section {
   position: relative;
   height: 100vh;
-  min-height: 652px;
+  min-height: 40.75rem;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    height: 100vh;
+    min-height: 62.5rem;
+  }
 }
 .section__title {
   font-weight: bold;
@@ -441,6 +452,18 @@ button {
 }
 .section__title--welcome {
   margin-bottom: 1.375rem;
+}
+@media screen and (max-width: 768px) {
+  .section__title--welcome {
+    margin-bottom: 0.3125rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title--welcome {
+    font-size: 2rem;
+    line-height: 1.125;
+    margin-bottom: 0.875rem;
+  }
 }
 .section__title--features {
   margin-bottom: 1.25rem;
@@ -453,6 +476,22 @@ button {
   background-color: #F5F5F5;
   padding-top: 1.875rem;
   padding-bottom: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .welcome-section {
+    padding-top: 0;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    padding-bottom: 10.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .welcome-section {
+    padding-top: 0;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    padding-bottom: 4.5rem;
+  }
 }
 .welcome-section__container {
   display: -webkit-box;
@@ -475,6 +514,17 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .welcome-section__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .welcome-section__body {
   width: 45%;
   -ms-flex-item-align: center;
@@ -482,12 +532,45 @@ button {
       align-self: center;
   padding-bottom: 4.375rem;
 }
+@media screen and (max-width: 768px) {
+  .welcome-section__body {
+    width: 94%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcome-section__body {
+    width: 84%;
+  }
+}
 .welcome-section__text {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1.3125rem;
   line-height: 1.19;
   max-width: 21.25rem;
-  margin-bottom: 2.1875rem;
+  margin-bottom: 2.25rem;
+}
+@media screen and (max-width: 768px) {
+  .welcome-section__text {
+    max-width: 23.125rem;
+    margin: 0 auto 1.4375rem;
+    max-width: 18.125rem;
+    font-size: 1.125rem;
+    line-height: 1.11;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcome-section__product-image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .welcome-section__product-image {
+    margin-bottom: 3.0625rem;
+  }
 }
 .welcome-section::after {
   position: absolute;
@@ -524,6 +607,13 @@ button {
   color: #E01F3D;
 }
 
+.gamburger-button {
+  width: 1.625rem;
+  height: 1.5rem;
+  background: url("/beats-solo/images/icons/gamburger.png") center center no-repeat;
+  cursor: pointer;
+}
+
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,11 +621,37 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .main-header {
+    padding: 1.625rem 0;
+    margin-bottom: 6.625rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-header__phone {
+    display: none;
+  }
+}
+.main-header__gamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .main-header__gamburger {
+    display: block;
+  }
 }
 
 .menu {
@@ -576,6 +692,12 @@ button {
   height: 30.625rem;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .product-avatar {
+    width: 20.25rem;
+    height: 20.25rem;
+  }
+}
 
 .button {
   display: inline-block;
@@ -603,6 +725,13 @@ button {
   background-color: transparent;
   color: #E01F3D;
 }
+@media screen and (max-width: 480px) {
+  .button {
+    font-size: 1.1875rem;
+    line-height: 0.947;
+    padding: 1.3125rem 2.25rem;
+  }
+}
 
 .product-features {
   display: -webkit-box;
@@ -611,6 +740,11 @@ button {
 }
 .product-features__item {
   margin-right: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .product-features {
+    display: none;
+  }
 }
 
 .product-feature {
@@ -634,6 +768,11 @@ button {
   position: fixed;
   right: 5%;
   top: 15rem;
+}
+@media screen and (max-width: 768px) {
+  .side-menu {
+    display: none;
+  }
 }
 .side-menu__list {
   display: -webkit-box;
@@ -765,7 +904,7 @@ button {
   margin-bottom: 0.4375rem;
 }
 .advantage__text {
-  min-width: 15.625rem;
+  max-width: 15.625rem;
   color: #666666;
 }
 

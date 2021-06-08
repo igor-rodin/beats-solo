@@ -1,7 +1,12 @@
 .section {
   position: relative;
   height: 100vh;
-  min-height: 652px;
+  min-height: px2rem(652);
+
+  @include mq-medium {
+    height: 100vh;
+    min-height: px2rem(1000);
+  }
 
   &__title {
     font-weight: bold;
@@ -11,7 +16,18 @@
 
     &--welcome {
       margin-bottom: px2rem(22);
+
+      @include mq-medium {
+        margin-bottom: px2rem(5);
+      }
+
+      @include mq-small {
+        font-size: px2rem(32);
+        line-height: 1.125;
+        margin-bottom: px2rem(14);
+      }
     }
+
     &--features {
       margin-bottom: px2rem(20);
     }

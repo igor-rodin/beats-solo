@@ -1,7 +1,33 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   margin-bottom: px2rem(50);
+
+  @include mq-medium {
+    padding: px2rem(26) 0;
+    margin-bottom: px2rem(106);
   }
+
+  &__menu {
+    @include mq-medium {
+      display: none;
+    }
+  }
+
+  &__phone {
+    @include mq-medium {
+      display: none;
+    }
+  }
+
+  &__gamburger {
+    display: none;
+    
+    @include mq-medium {
+      display: block;
+    }
+  }
+}

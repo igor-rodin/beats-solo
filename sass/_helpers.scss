@@ -1,6 +1,21 @@
 // Convert px to rem
-@function px2rem($size_px, $base_fsz: 16){
-  @if $size_px != 1 {
-    @return #{$size_px/$base_fsz}rem 
+@function px2rem($size_px, $base_fsz: 16) {
+  @if $size_px !=1 {
+    @return #{$size_px/$base_fsz}rem
+  }
+}
+
+;
+
+// media queries mixins
+@mixin mq-medium {
+  @media screen and (max-width: $medium-size) {
+    @content;
+  }
+}
+
+@mixin mq-small {
+  @media screen and (max-width: $small-size) {
+    @content;
   }
 }

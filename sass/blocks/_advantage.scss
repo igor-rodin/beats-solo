@@ -33,7 +33,7 @@
   }
 
   &__text {
-    min-width: px2rem(250);
+    max-width: px2rem(250);
     color: $second-color;
   }
 }
