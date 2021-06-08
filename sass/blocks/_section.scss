@@ -30,6 +30,16 @@
 
     &--features {
       margin-bottom: px2rem(20);
+
+      @include mq-medium {
+        margin-bottom: px2rem(11);
+      }
+
+      @include mq-small {
+        font-size: px2rem(32);
+        line-height: 1.125;
+        margin-bottom: px2rem(11);
+      }
     }
 
     &--reviews {

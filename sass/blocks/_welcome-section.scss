@@ -14,7 +14,8 @@
     padding-top: 0;
     padding-left: px2rem(10);
     padding-right: px2rem(10);
-    padding-bottom: px2rem(72);
+    padding-bottom: 0;
+    min-height: px2rem(800);
   }
 
   &__container {

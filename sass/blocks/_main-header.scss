@@ -11,6 +11,10 @@
     margin-bottom: px2rem(106);
   }
 
+  @include mq-small {
+    margin-bottom: px2rem(17);
+  }
+
   &__menu {
     @include mq-medium {
       display: none;

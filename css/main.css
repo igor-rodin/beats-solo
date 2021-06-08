@@ -468,6 +468,18 @@ button {
 .section__title--features {
   margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 768px) {
+  .section__title--features {
+    margin-bottom: 0.6875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title--features {
+    font-size: 2rem;
+    line-height: 1.125;
+    margin-bottom: 0.6875rem;
+  }
+}
 .section__title--reviews {
   margin-bottom: 2rem;
 }
@@ -490,7 +502,8 @@ button {
     padding-top: 0;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 0;
+    min-height: 50rem;
   }
 }
 .welcome-section__container {
@@ -633,6 +646,11 @@ button {
   .main-header {
     padding: 1.625rem 0;
     margin-bottom: 6.625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-header {
+    margin-bottom: 1.0625rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -816,10 +834,27 @@ button {
   padding: 6.25rem 0 5.625rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .advantages-section {
+    padding: 17.625rem 0 16rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages-section {
+    padding: 2.375rem 0 3.375rem;
+    min-height: 44.1875rem;
+  }
+}
 .advantages-section__text {
   max-width: 55%;
-  margin: 0 auto 3.75rem;
+  margin: 0 auto 3.875rem;
   color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .advantages-section__text {
+    max-width: 70%;
+    margin: 0 auto 3.25rem;
+  }
 }
 .advantages-section::after {
   position: absolute;
@@ -836,9 +871,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .advantages__item {
   -webkit-box-flex: 1;
@@ -853,6 +888,17 @@ button {
 .advantages__item:last-child {
   padding-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .advantages__item {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__item {
+    padding: 0;
+    margin-bottom: 6%;
+  }
+}
 .advantages__item:not(:last-of-type)::after {
   content: " ";
   position: absolute;
@@ -864,6 +910,25 @@ button {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   background: url("/beats-solo/images/icons/circles.png") center center no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .advantages__item:not(:last-of-type)::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 .advantage {
@@ -887,6 +952,12 @@ button {
   border-radius: 50%;
   overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+  .advantage__image {
+    margin: 0;
+    margin-right: 0.75rem;
+  }
+}
 .advantage__image-icon {
   position: absolute;
   top: 50%;
@@ -897,15 +968,62 @@ button {
 .advantage__body {
   padding: 0 0.9375rem;
 }
+@media screen and (max-width: 768px) {
+  .advantage__body {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantage__body {
+    text-align: left;
+    padding: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
 .advantage__title {
   font-size: 1.5rem;
   line-height: 1.17;
   font-weight: bold;
   margin-bottom: 0.4375rem;
 }
+@media screen and (max-width: 768px) {
+  .advantage__title {
+    margin-bottom: 1.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantage__title {
+    margin-bottom: 0.375rem;
+  }
+}
 .advantage__text {
   max-width: 15.625rem;
+  margin: 0 auto;
   color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .advantage__text {
+    max-width: 14rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantage__text {
+    max-width: 84%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantage {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .reviews-section {
