@@ -20,6 +20,10 @@
       max-width: 70%;
       margin: 0 auto px2rem(52);
     }
+
+    @include mq-small {
+      max-width: 100%;
+    }
   }
 
   &::after {

@@ -856,6 +856,11 @@ button {
     margin: 0 auto 3.25rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .advantages-section__text {
+    max-width: 100%;
+  }
+}
 .advantages-section::after {
   position: absolute;
   content: "";
