@@ -6,6 +6,8 @@
   }
 
   @include mq-small{
+    padding-top: px2rem(38);
+    padding-bottom: px2rem(54);
     height: min-content;
   }
 

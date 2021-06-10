@@ -904,6 +904,8 @@ button {
 }
 @media screen and (max-width: 480px) {
   .advantages-section {
+    padding-top: 2.375rem;
+    padding-bottom: 3.375rem;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
