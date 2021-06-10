@@ -3,12 +3,26 @@
   min-height: px2rem(86);
   padding-top: px2rem(20);
 
+  @include mq-small{
+    padding-bottom: px2rem(32);
+  }
+
   &__container {
-    max-width: 940px;
+    max-width: px2rem(940);
     margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mq-medium {
+      max-width: px2rem(700);
+    }
+
+    @include mq-small {
+      max-width: px2rem(480);
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }

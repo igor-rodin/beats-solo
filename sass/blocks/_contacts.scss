@@ -3,7 +3,22 @@
   font-size: px2rem(18);
   line-height: 1.333;
 
-    &__address {
-      margin-bottom: px2rem(3);
+  @include mq-medium {
+    font-size: px2rem(21);
+    line-height: 1.143;
+  }
+
+  @include mq-small {
+    margin-bottom: px2rem(20);
+    font-size: px2rem(18);
+    line-height: 1.333;
+  }
+
+  &__address {
+    margin-bottom: px2rem(4);
+
+    @include mq-small {
+      margin-bottom: px2rem(12);
     }
   }
+}

@@ -16,9 +16,17 @@
     border-radius: px2rem(4);
     transition: border-color 0.5s;
 
+    @include mq-medium {
+      padding: px2rem(6) px2rem(10) px2rem(6);
+    }
+
     &--textarea {
       resize: none;
       height: px2rem(150);
+
+      @include mq-medium {
+        height: px2rem(80);
+      }
     }
   }
 

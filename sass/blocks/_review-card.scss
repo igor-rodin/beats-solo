@@ -1,0 +1,58 @@
+.review-card {
+  padding: px2rem(42) px2rem(110) px2rem(42) px2rem(42);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-color: $bg-review-card;
+
+  @include mq-medium {
+    flex-direction: column;
+    padding: px2rem(56) px2rem(24) px2rem(15) px2rem(24);
+  }
+
+  &__user-avatar {
+    margin-right: px2rem(40);
+
+    @include mq-medium {
+      width: px2rem(130);
+      height: px2rem(130);
+      margin: 0;
+      margin-bottom: px2rem(22);
+    }
+  }
+
+  &__content {
+    flex: 1;
+
+    @include mq-medium {
+      text-align: center;
+      padding-bottom: px2rem(16);
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: px2rem(24);
+    line-height: 1.17;
+    margin-bottom: px2rem(26);
+
+    @include mq-medium {
+      margin-bottom: px2rem(12);
+    }
+  }
+
+  &__text {
+    margin-bottom: px2rem(38);
+    color: $second-color;
+
+    @include mq-medium {
+      margin-bottom: px2rem(16);
+    }
+  }
+
+  &__user-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}

@@ -429,7 +429,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .container {
-    max-width: px2 rem(728);
+    max-width: 48.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 30rem;
   }
 }
 
@@ -440,8 +445,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .section {
-    height: 100vh;
     min-height: 62.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: 50rem;
   }
 }
 .section__title {
@@ -450,18 +459,22 @@ button {
   line-height: 1.08;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 2rem;
+    line-height: 1.125;
+  }
+}
 .section__title--welcome {
   margin-bottom: 1.375rem;
 }
 @media screen and (max-width: 768px) {
   .section__title--welcome {
-    margin-bottom: 0.3125rem;
+    margin-bottom: 0.75rem;
   }
 }
 @media screen and (max-width: 480px) {
   .section__title--welcome {
-    font-size: 2rem;
-    line-height: 1.125;
     margin-bottom: 0.875rem;
   }
 }
@@ -473,15 +486,26 @@ button {
     margin-bottom: 0.6875rem;
   }
 }
-@media screen and (max-width: 480px) {
-  .section__title--features {
-    font-size: 2rem;
-    line-height: 1.125;
-    margin-bottom: 0.6875rem;
-  }
-}
 .section__title--reviews {
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .section__title--reviews {
+    margin-bottom: 1.625rem;
+  }
+}
+.section__title--form {
+  margin-bottom: 3.75rem;
+}
+@media screen and (max-width: 768px) {
+  .section__title--form {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title--form {
+    margin-bottom: 2.5625rem;
+  }
 }
 
 .welcome-section {
@@ -503,7 +527,6 @@ button {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     padding-bottom: 0;
-    min-height: 50rem;
   }
 }
 .welcome-section__container {
@@ -565,8 +588,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   .welcome-section__text {
-    max-width: 23.125rem;
+    max-width: 60%;
     margin: 0 auto 1.4375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .welcome-section__text {
+    margin: 0 auto 1.625rem;
     max-width: 18.125rem;
     font-size: 1.125rem;
     line-height: 1.11;
@@ -606,6 +634,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .phone-number {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .phone-number__icon {
   width: 0.875rem;
   height: 0.875rem;
@@ -616,11 +651,17 @@ button {
   font-size: 1.125rem;
   line-height: 1.17;
 }
-.phone-number:hover {
+@media screen and (max-width: 480px) {
+  .phone-number__text {
+    font-size: 1rem;
+    line-height: 1.312;
+  }
+}
+.phone-number__text:hover {
   color: #E01F3D;
 }
 
-.gamburger-button {
+.button-togle {
   width: 1.625rem;
   height: 1.5rem;
   background: url("/beats-solo/images/icons/gamburger.png") center center no-repeat;
@@ -663,11 +704,11 @@ button {
     display: none;
   }
 }
-.main-header__gamburger {
+.main-header__togle {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .main-header__gamburger {
+  .main-header__togle {
     display: block;
   }
 }
@@ -701,8 +742,26 @@ button {
   font-size: 1.125rem;
   line-height: 1.333;
 }
+@media screen and (max-width: 768px) {
+  .contacts {
+    font-size: 1.3125rem;
+    line-height: 1.143;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.333;
+  }
+}
 .contacts__address {
-  margin-bottom: 0.1875rem;
+  margin-bottom: 0.25rem;
+}
+@media screen and (max-width: 480px) {
+  .contacts__address {
+    margin-bottom: 0.75rem;
+  }
 }
 
 .product-avatar {
@@ -729,6 +788,13 @@ button {
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
+@media screen and (max-width: 480px) {
+  .button {
+    font-size: 1rem;
+    line-height: 1.125;
+    padding: 1.3125rem 2.5625rem;
+  }
+}
 .button:hover {
   cursor: pointer;
   background-color: #CA1B36;
@@ -739,16 +805,14 @@ button {
   font-weight: normal;
   padding-left: 0.9375rem;
 }
+@media screen and (max-width: 480px) {
+  .button--theme-transparent {
+    padding-left: 1.625rem;
+  }
+}
 .button--theme-transparent:hover {
   background-color: transparent;
   color: #E01F3D;
-}
-@media screen and (max-width: 480px) {
-  .button {
-    font-size: 1.1875rem;
-    line-height: 0.947;
-    padding: 1.3125rem 2.25rem;
-  }
 }
 
 .product-features {
@@ -831,18 +895,11 @@ button {
 }
 
 .advantages-section {
-  padding: 6.25rem 0 5.625rem;
   text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .advantages-section {
-    padding: 17.625rem 0 16rem;
-  }
 }
 @media screen and (max-width: 480px) {
   .advantages-section {
-    padding: 2.375rem 0 3.375rem;
-    min-height: 44.1875rem;
+    padding-left: 0.5rem;
   }
 }
 .advantages-section__text {
@@ -858,7 +915,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .advantages-section__text {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 .advantages-section::after {
@@ -900,8 +957,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .advantages__item {
-    padding: 0;
-    margin-bottom: 6%;
+    margin-bottom: 8%;
   }
 }
 .advantages__item:not(:last-of-type)::after {
@@ -1032,8 +1088,18 @@ button {
 }
 
 .reviews-section {
-  padding: 4.25rem 0 4rem;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .reviews-section {
+    padding: 0 1.375rem;
+    min-height: 61rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews-section {
+    padding: 0 0.625rem;
+  }
 }
 .reviews-section::after {
   position: absolute;
@@ -1045,69 +1111,6 @@ button {
   background-color: #868686;
   bottom: -1.125rem;
   left: 12%;
-}
-
-.reviews__card {
-  position: relative;
-  padding: 2.625rem 6.875rem 2.625rem 2.625rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-  background-color: #F8FAF9;
-  margin-bottom: 0.9375rem;
-  overflow: hidden;
-}
-.reviews__card::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 5.1875rem;
-  height: 5.1875rem;
-  border-radius: 50%;
-  top: -3.8125rem;
-  left: calc(50% - 2.0625rem);
-  background-color: #fff;
-}
-.reviews__user-avatar {
-  margin-right: 40px;
-}
-.reviews__content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-.reviews__title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1.17;
-  margin-bottom: 26px;
-}
-.reviews__text {
-  margin-bottom: 38px;
-  color: #666666;
-}
-.reviews__user-name {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.17;
-}
-.reviews__picker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.reviews__picker-item {
-  margin-right: 6px;
-}
-.reviews__picker-item:hover {
-  border: 4px solid #E01F3D;
 }
 
 .avatar {
@@ -1123,6 +1126,12 @@ button {
   -webkit-transition: border-color 0.5s;
   transition: border-color 0.5s;
 }
+@media screen and (max-width: 480px) {
+  .avatar-picker {
+    width: 4rem;
+    height: 4rem;
+  }
+}
 .avatar-picker__link {
   display: block;
 }
@@ -1130,21 +1139,148 @@ button {
   border: 0.25rem solid #E01F3D;
 }
 
+.review-card {
+  padding: 2.625rem 6.875rem 2.625rem 2.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  background-color: #F8FAF9;
+}
+@media screen and (max-width: 768px) {
+  .review-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3.5rem 1.5rem 0.9375rem 1.5rem;
+  }
+}
+.review-card__user-avatar {
+  margin-right: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .review-card__user-avatar {
+    width: 8.125rem;
+    height: 8.125rem;
+    margin: 0;
+    margin-bottom: 1.375rem;
+  }
+}
+.review-card__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .review-card__content {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+.review-card__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.17;
+  margin-bottom: 1.625rem;
+}
+@media screen and (max-width: 768px) {
+  .review-card__title {
+    margin-bottom: 0.75rem;
+  }
+}
+.review-card__text {
+  margin-bottom: 2.375rem;
+  color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .review-card__text {
+    margin-bottom: 1rem;
+  }
+}
+.review-card__user-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.reviews__card {
+  position: relative;
+  margin-bottom: 0.9375rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .reviews__card {
+    margin-bottom: 2.875rem;
+  }
+}
+.reviews__card::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 5.1875rem;
+  height: 5.1875rem;
+  border-radius: 50%;
+  top: -3.8125rem;
+  left: calc(50% - 2.0625rem);
+  background-color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .reviews__card::before {
+    display: none;
+  }
+}
+.reviews__picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reviews__picker-item {
+  margin-right: 0.375rem;
+}
+.reviews__picker-item:hover {
+  border: 0.25rem solid #E01F3D;
+}
+
 .form-section {
-  padding: 4.25rem 5rem 5.25rem 5.25rem;
+  padding: 0 5rem;
   color: #fff;
   min-height: 40.75rem;
   background: #181818 url("/beats-solo/images/bg-form.png") left bottom/contain no-repeat;
   text-align: center;
 }
-.form-section__title {
-  margin-bottom: 3.75rem;
+@media screen and (max-width: 480px) {
+  .form-section {
+    padding: 0 0.625rem;
+  }
 }
 
 .form__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .form__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 4.375rem;
+    padding-right: 4.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__inner {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
 }
 .form__column {
   -webkit-box-flex: 1;
@@ -1153,6 +1289,11 @@ button {
 }
 .form__column:first-of-type {
   margin-right: 1.125rem;
+}
+@media screen and (max-width: 768px) {
+  .form__column:first-of-type {
+    margin-right: 0;
+  }
 }
 .form__row {
   display: -webkit-box;
@@ -1166,8 +1307,37 @@ button {
   padding-top: 1.375rem;
   padding-bottom: 0.625rem;
 }
+@media screen and (max-width: 768px) {
+  .form__row--controls {
+    padding-top: 0.375rem;
+    padding-bottom: 0;
+    margin-bottom: 1.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__row--controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+}
 .form__row--buttons {
   margin-top: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .form__row--buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__row--buttons {
+    padding-left: 10.25rem;
+    padding-right: 6.625rem;
+  }
 }
 .form__row-element {
   -webkit-box-flex: 1;
@@ -1203,9 +1373,19 @@ button {
   -webkit-transition: border-color 0.5s;
   transition: border-color 0.5s;
 }
+@media screen and (max-width: 768px) {
+  .form-element__input {
+    padding: 0.375rem 0.625rem 0.375rem;
+  }
+}
 .form-element__input--textarea {
   resize: none;
   height: 9.375rem;
+}
+@media screen and (max-width: 768px) {
+  .form-element__input--textarea {
+    height: 5rem;
+  }
 }
 .form-element--active .form-element__input, .form-element:hover .form-element__input {
   border: 0.1875rem solid #E01F3D;
@@ -1265,7 +1445,12 @@ button {
   background: url("/beats-solo/images/icons/check.png") center center no-repeat;
 }
 
-.map-section {
+.map-section__container {
+  max-width: 100%;
+}
+
+.map {
+  height: 100%;
   background: url("/beats-solo/images/map.png") center center/cover no-repeat;
 }
 
@@ -1274,8 +1459,13 @@ button {
   min-height: 5.375rem;
   padding-top: 1.25rem;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-bottom: 2rem;
+  }
+}
 .footer__container {
-  max-width: 940px;
+  max-width: 58.75rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1286,6 +1476,23 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    max-width: 43.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    max-width: 30rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .socials__list {
@@ -1298,6 +1505,11 @@ button {
 }
 .socials__item {
   margin-right: 0.625rem;
+}
+@media screen and (max-width: 480px) {
+  .socials__item {
+    margin-right: 0.875rem;
+  }
 }
 .socials__item:last-of-type {
   margin-right: 0;
@@ -1320,6 +1532,21 @@ button {
   width: 1.875rem;
   height: 1.875rem;
   line-height: 1.875rem;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .socials__link {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .socials__link {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
 .socials__link::after {
   content: "";
@@ -1331,5 +1558,17 @@ button {
           transform: translate(-50%, -50%);
   width: 1.875rem;
   height: 1.875rem;
+}
+@media screen and (max-width: 768px) {
+  .socials__link::after {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .socials__link::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -89,7 +89,11 @@ button {
   max-width: px2rem(940);
 
   @include mq-medium {
-    max-width: px2 rem(728);
+    max-width: px2rem(776);
+  }
+
+  @include mq-small {
+    max-width: px2rem(480);
   }
 
   margin: 0 auto;

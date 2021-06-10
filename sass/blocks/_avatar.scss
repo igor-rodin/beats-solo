@@ -10,6 +10,11 @@
     overflow: hidden;
     transition: border-color 0.5s;
 
+    @include mq-small {
+      width: px2rem(64);
+      height: px2rem(64);
+    }
+
     &__link {
       display: block;
     }

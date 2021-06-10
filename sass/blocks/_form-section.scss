@@ -1,11 +1,12 @@
 .form-section {
-  padding: px2rem(68) px2rem(80) px2rem(84) px2rem(84);
+  padding: 0 px2rem(80);
   color: $form-text-color;
   min-height: px2rem(652);
   background: $bg-form-color url("/beats-solo/images/bg-form.png") left bottom/contain no-repeat;
   text-align: center;
 
-  &__title {
-    margin-bottom: px2rem(60);
+
+  @include mq-small {
+    padding: 0 px2rem(10);
   }
 }

@@ -15,7 +15,6 @@
     padding-left: px2rem(10);
     padding-right: px2rem(10);
     padding-bottom: 0;
-    min-height: px2rem(800);
   }
 
   &__container {
@@ -58,8 +57,11 @@
     margin-bottom: px2rem(36);
 
     @include mq-medium {
-      max-width: px2rem(370);
+      max-width: 60%;
       margin: 0 auto px2rem(23);
+    }
+    @include mq-small {
+      margin: 0 auto px2rem(26);
       max-width: px2rem(290);
       font-size: px2rem(18);
       line-height: 1.11;

@@ -1,14 +1,8 @@
 .advantages-section {
-  padding: px2rem(100) 0 px2rem(90);
   text-align: center;
 
-  @include mq-medium {
-    padding: px2rem(282) 0 px2rem(256);
-  }
-
   @include mq-small {
-    padding: px2rem(38) 0 px2rem(54);
-    min-height: px2rem(707);
+    padding-left: px2rem(8);
   }
 
   &__text {
@@ -22,7 +16,7 @@
     }
 
     @include mq-small {
-      max-width: 100%;
+      max-width: 95%;
     }
   }
 

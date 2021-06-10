@@ -4,8 +4,11 @@
   min-height: px2rem(652);
 
   @include mq-medium {
-    height: 100vh;
     min-height: px2rem(1000);
+  }
+
+  @include mq-small {
+    min-height: px2rem(800);
   }
 
   &__title {
@@ -14,16 +17,19 @@
     line-height: 1.08;
     text-transform: uppercase;
 
+    @include mq-small {
+      font-size: px2rem(32);
+      line-height: 1.125;
+    }
+
     &--welcome {
       margin-bottom: px2rem(22);
 
       @include mq-medium {
-        margin-bottom: px2rem(5);
+        margin-bottom: px2rem(12);
       }
 
       @include mq-small {
-        font-size: px2rem(32);
-        line-height: 1.125;
         margin-bottom: px2rem(14);
       }
     }
@@ -34,17 +40,26 @@
       @include mq-medium {
         margin-bottom: px2rem(11);
       }
-
-      @include mq-small {
-        font-size: px2rem(32);
-        line-height: 1.125;
-        margin-bottom: px2rem(11);
-      }
     }
 
     &--reviews {
       margin-bottom: px2rem(32);
+
+      @include mq-small {
+        margin-bottom: px2rem(26);
+      }
     }
 
+    &--form {
+      margin-bottom: px2rem(60);
+
+      @include mq-medium {
+        margin-bottom: px2rem(32);
+      }
+
+      @include mq-small {
+        margin-bottom: px2rem(41);
+      }
+    }
   }
 }

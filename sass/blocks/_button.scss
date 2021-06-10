@@ -9,6 +9,12 @@
   color: $btn-color;
   transition: background-color 0.5s;
 
+  @include mq-small {
+    font-size: px2rem(16);
+    line-height: 1.125;
+    padding: px2rem(21) px2rem(41);
+  }
+
   &:hover {
     cursor: pointer;
     background-color: $btn-hover-bg-color;
@@ -20,15 +26,13 @@
     font-weight: normal;
     padding-left: px2rem(15);
 
+    @include mq-small {
+      padding-left: px2rem(26);
+    }
+
     &:hover {
       background-color: transparent;
       color: $hover-text-color;
     }
-  }
-
-  @include mq-small {
-    font-size: px2rem(19);
-    line-height: 0.947;
-    padding: px2rem(21) px2rem(36);
   }
 }

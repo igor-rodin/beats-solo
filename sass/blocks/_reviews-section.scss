@@ -1,5 +1,13 @@
 .reviews-section {
-  padding: px2rem(68) 0 px2rem(64);
+  @include mq-medium {
+    padding: 0 px2rem(22);
+    min-height: px2rem(976);
+  }
+
+  @include mq-small {
+    padding: 0 px2rem(10);
+  }
+
   text-align: center;
 
   &::after {

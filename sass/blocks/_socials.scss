@@ -9,6 +9,10 @@
   &__item {
     margin-right: px2rem(10);
 
+    @include mq-small{
+      margin-right: px2rem(14);
+    }
+
     &:last-of-type {
       margin-right: 0;
     }
@@ -29,6 +33,19 @@
     width: px2rem(30);
     height: px2rem(30);
     line-height: px2rem(30);
+    border-radius: 50%;
+
+    @include mq-medium {
+      width: px2rem(32);
+      height: px2rem(32);
+      line-height: px2rem(32);
+    }
+
+    @include mq-small {
+      width: px2rem(24);
+      height: px2rem(24);
+      line-height: px2rem(24);
+    }
 
     &::after {
       content: '';
@@ -39,6 +56,16 @@
       transform: translate(-50%, -50%);
       width: px2rem(30);
       height: px2rem(30);
+
+      @include mq-medium {
+        width: px2rem(32);
+        height: px2rem(32);
+      }
+
+      @include mq-small {
+        width: px2rem(24);
+        height: px2rem(24);
+      }
     }
   }
 }

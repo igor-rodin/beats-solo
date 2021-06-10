@@ -1,13 +1,28 @@
 .form {
   &__inner {
     display: flex;
+
+    @include mq-medium {
+      flex-direction: column;
+      padding-left: px2rem(70);
+      padding-right: px2rem(68);
+    }
+
+    @include mq-small {
+      padding-left: px2rem(4);
+      padding-right: px2rem(4);
+    }
   }
 
   &__column {
     flex: 1;
 
     &:first-of-type {
-      margin-right: px2rem(18); 
+      margin-right: px2rem(18);
+
+      @include mq-medium {
+        margin-right: 0;
+      }
     }
   }
 
@@ -19,10 +34,31 @@
       flex-wrap: wrap;
       padding-top: px2rem(22);
       padding-bottom: px2rem(10);
+
+      @include mq-medium {
+        padding-top: px2rem(6);
+        padding-bottom: 0;
+        margin-bottom: px2rem(22);
+      }
+
+      @include mq-small {
+        justify-content: center;
+        margin-bottom: px2rem(20);
+      }
     }
 
     &--buttons {
       margin-top: px2rem(48);
+
+      @include mq-medium {
+        justify-content: center;
+        margin-top: px2rem(36);
+      }
+
+      @include mq-small {
+        padding-left: px2rem(164);
+        padding-right: px2rem(106);
+      }
     }
   }
 
