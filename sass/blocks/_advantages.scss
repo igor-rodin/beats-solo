@@ -13,6 +13,10 @@
 
     &:last-child {
       padding-right: 0;
+
+      @include mq-small{
+        margin-bottom: 0;
+      }
     }
 
     @include mq-medium {

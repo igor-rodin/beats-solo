@@ -4,8 +4,8 @@
 
     @include mq-medium {
       flex-direction: column;
-      padding-left: px2rem(70);
-      padding-right: px2rem(68);
+      padding-left: 12%;//px2rem(70);
+      padding-right: 12%;//px2rem(68);
     }
 
     @include mq-small {

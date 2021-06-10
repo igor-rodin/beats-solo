@@ -5,6 +5,10 @@
     padding-left: px2rem(8);
   }
 
+  @include mq-small{
+    height: min-content;
+  }
+
   &__text {
     max-width: 55%;
     margin: 0 auto px2rem(62);

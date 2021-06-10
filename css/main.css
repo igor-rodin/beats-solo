@@ -902,6 +902,13 @@ button {
     padding-left: 0.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .advantages-section {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
 .advantages-section__text {
   max-width: 55%;
   margin: 0 auto 3.875rem;
@@ -949,6 +956,11 @@ button {
 }
 .advantages__item:last-child {
   padding-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .advantages__item:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .advantages__item {
@@ -1272,8 +1284,8 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 4.375rem;
-    padding-right: 4.25rem;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 @media screen and (max-width: 480px) {
