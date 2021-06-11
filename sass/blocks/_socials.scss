@@ -9,7 +9,7 @@
   &__item {
     margin-right: px2rem(10);
 
-    @include mq-small{
+    @include mq-small {
       margin-right: px2rem(14);
     }
 
@@ -17,18 +17,23 @@
       margin-right: 0;
     }
 
-    @each $social in (vk, fb, insta, tel) {
-      &--#{$social} {
-        #{$this}__link {
-          background: url('/beats-solo/images/icons/socials/#{$social}.png') center no-repeat;
-        }
+    &:hover {
+      #{$this}__link-icon {
+        fill: $icon-hover-color;
       }
     }
+
+    // @each $social in (vk, fb, insta, tel) {
+    //   &--#{$social} {
+    //     #{$this}__link {
+    //       background: url('/beats-solo/images/icons/socials/#{$social}.png') center no-repeat;
+    //     }
+    //   }
+    // }
 
   }
 
   &__link {
-    position: relative;
     display: block;
     width: px2rem(30);
     height: px2rem(30);
@@ -47,15 +52,11 @@
       line-height: px2rem(24);
     }
 
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    &-icon {
       width: px2rem(30);
       height: px2rem(30);
+      fill: #B3B3B3;
+      transition: 0.5s;
 
       @include mq-medium {
         width: px2rem(32);

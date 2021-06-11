@@ -1,7 +1,6 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   margin-bottom: px2rem(50);
@@ -16,6 +15,7 @@
   }
 
   &__menu {
+    margin: 0 px2rem(5);
     @include mq-medium {
       display: none;
     }

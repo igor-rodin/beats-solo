@@ -1,11 +1,9 @@
 // Convert px to rem
-@function px2rem($size_px, $base_fsz: 16) {
+@function px2rem($size_px) {
   @if $size_px !=1 {
-    @return #{$size_px/$base_fsz}rem
+    @return #{$size_px/$base-font-size}rem
   }
-}
-
-;
+};
 
 // media queries mixins
 @mixin mq-medium {

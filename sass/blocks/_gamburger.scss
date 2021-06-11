@@ -1,0 +1,13 @@
+.gamburger {
+  width: 26px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__stripe {
+    height: 4px;
+    background-color: #292929;
+    border-radius: 10px;
+  }
+}

@@ -413,6 +413,7 @@ button {
 }
 
 .container {
+  width: 98%;
   max-width: 58.75rem;
   margin: 0 auto;
   display: -webkit-box;
@@ -626,6 +627,12 @@ button {
   right: 12%;
 }
 
+.logo__image {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #E01F3D;
+}
+
 .phone-number {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,6 +657,7 @@ button {
   font-style: normal;
   font-size: 1.125rem;
   line-height: 1.17;
+  white-space: nowrap;
 }
 @media screen and (max-width: 480px) {
   .phone-number__text {
@@ -661,10 +669,27 @@ button {
   color: #E01F3D;
 }
 
+.gamburger {
+  width: 26px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gamburger__stripe {
+  height: 4px;
+  background-color: #292929;
+  border-radius: 10px;
+}
+
 .button-togle {
-  width: 1.625rem;
-  height: 1.5rem;
-  background: url("/beats-solo/images/icons/gamburger.png") center center no-repeat;
   cursor: pointer;
 }
 
@@ -675,8 +700,6 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -693,6 +716,9 @@ button {
   .main-header {
     margin-bottom: 1.0625rem;
   }
+}
+.main-header__menu {
+  margin: 0 0.3125rem;
 }
 @media screen and (max-width: 768px) {
   .main-header__menu {
@@ -735,6 +761,9 @@ button {
 }
 .menu__item:hover {
   color: #E01F3D;
+}
+.menu__link {
+  white-space: nowrap;
 }
 
 .contacts {
@@ -933,7 +962,7 @@ button {
   display: block;
   width: 2.15625rem;
   height: 2.125rem;
-  background: url("/beats-solo/images/icons/feature-decor.png") center no-repeat;
+  background: url("/beats-solo/images/icons/triangel.svg") center no-repeat;
   bottom: -1.0625rem;
   left: 10%;
 }
@@ -984,7 +1013,7 @@ button {
   height: 1.3125rem;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  background: url("/beats-solo/images/icons/circles.png") center center no-repeat;
+  background: url("/beats-solo/images/icons/circles.svg") center center no-repeat;
 }
 @media screen and (max-width: 768px) {
   .advantages__item:not(:last-of-type)::after {
@@ -1034,6 +1063,8 @@ button {
   }
 }
 .advantage__image-icon {
+  width: 4.25rem;
+  height: 4.25rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1456,7 +1487,7 @@ button {
   border-radius: 0.25rem;
 }
 .form-control--checkbox .form-control__visual::before {
-  background: url("/beats-solo/images/icons/check.png") center center no-repeat;
+  background: url("/beats-solo/images/icons/check.svg") center center no-repeat;
 }
 
 .map-section__container {
@@ -1528,20 +1559,10 @@ button {
 .socials__item:last-of-type {
   margin-right: 0;
 }
-.socials__item--vk .socials__link {
-  background: url("/beats-solo/images/icons/socials/vk.png") center no-repeat;
-}
-.socials__item--fb .socials__link {
-  background: url("/beats-solo/images/icons/socials/fb.png") center no-repeat;
-}
-.socials__item--insta .socials__link {
-  background: url("/beats-solo/images/icons/socials/insta.png") center no-repeat;
-}
-.socials__item--tel .socials__link {
-  background: url("/beats-solo/images/icons/socials/tel.png") center no-repeat;
+.socials__item:hover .socials__link-icon {
+  fill: #000000;
 }
 .socials__link {
-  position: relative;
   display: block;
   width: 1.875rem;
   height: 1.875rem;
@@ -1562,25 +1583,21 @@ button {
     line-height: 1.5rem;
   }
 }
-.socials__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.socials__link-icon {
   width: 1.875rem;
   height: 1.875rem;
+  fill: #B3B3B3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 @media screen and (max-width: 768px) {
-  .socials__link::after {
+  .socials__link-icon {
     width: 2rem;
     height: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .socials__link::after {
+  .socials__link-icon {
     width: 1.5rem;
     height: 1.5rem;
   }

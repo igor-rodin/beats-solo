@@ -1,0 +1,7 @@
+.logo {
+  &__image {
+    width: px2rem(40);
+    height: px2rem(40);
+    fill: $hover-text-color;
+  }
+}

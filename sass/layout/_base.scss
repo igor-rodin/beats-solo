@@ -9,9 +9,9 @@ $form-text-color: #fff;
 $btn-bg-color: #E01F3D;
 $btn-hover-bg-color: #CA1B36;
 $btn-color: #fff;
-
-$welcome-font: 'Alegreya Sans',
-sans-serif;
+$icon-color: #B3B3B3;
+$icon-hover-color: #000000;
+$welcome-font: 'Alegreya Sans', sans-serif;
 $secondary-font: 'Alegreya Sans',
 sans-serif;
 $base-font-size: 16;
@@ -43,7 +43,7 @@ body {
   height: 100%;
 }
 
-html{
+html {
   font-size: #{$base-font-size}px;
 }
 
@@ -86,6 +86,7 @@ button {
 
 
 .container {
+  width: 98%;
   max-width: px2rem(940);
 
   @include mq-medium {

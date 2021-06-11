@@ -16,6 +16,7 @@
     font-style: normal;
     font-size: px2rem(18);
     line-height: 1.17;
+    white-space: nowrap;
 
     @include mq-small {
       font-size: px2rem(16);
