@@ -687,10 +687,23 @@ button {
   height: 4px;
   background-color: #292929;
   border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-togle {
   cursor: pointer;
+}
+.button-togle:hover .gamburger__stripe:nth-last-of-type(2) {
+  opacity: 0;
+}
+.button-togle:hover .gamburger__stripe:nth-last-of-type(1) {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+          transform: translateY(-10px) rotate(45deg);
+}
+.button-togle:hover .gamburger__stripe:nth-last-of-type(3) {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+          transform: translateY(10px) rotate(-45deg);
 }
 
 .main-header {
@@ -800,8 +813,8 @@ button {
 }
 @media screen and (max-width: 768px) {
   .product-avatar {
-    width: 20.25rem;
-    height: 20.25rem;
+    width: 20.125rem;
+    height: 20.125rem;
   }
 }
 

@@ -1,3 +1,19 @@
 .button-togle {
   cursor: pointer;
+
+  &:hover {
+    .gamburger__stripe {
+      &:nth-last-of-type(2) {
+        opacity: 0;
+      }
+
+      &:nth-last-of-type(1) {
+        transform: translateY(-10px) rotate(45deg);
+      }
+
+      &:nth-last-of-type(3) {
+        transform: translateY(10px) rotate(-45deg);
+      }
+    }
+  }
 }
