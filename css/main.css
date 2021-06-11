@@ -973,9 +973,9 @@ button {
   position: absolute;
   content: "";
   display: block;
-  width: 2.15625rem;
-  height: 2.125rem;
-  background: url("/beats-solo/images/icons/triangel.svg") center no-repeat;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: url("/beats-solo/images/icons/sprite.svg#triangel") left top -21px no-repeat;
   bottom: -1.0625rem;
   left: 10%;
 }
@@ -1026,7 +1026,7 @@ button {
   height: 1.3125rem;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  background: url("/beats-solo/images/icons/circles.svg") center center no-repeat;
+  background: url("/beats-solo/images/icons/sprite.svg#circles") left top no-repeat;
 }
 @media screen and (max-width: 768px) {
   .advantages__item:not(:last-of-type)::after {
@@ -1500,7 +1500,7 @@ button {
   border-radius: 0.25rem;
 }
 .form-control--checkbox .form-control__visual::before {
-  background: url("/beats-solo/images/icons/check.svg") center center no-repeat;
+  background: url("/beats-solo/images/icons/sprite.svg#check") left -35px top -35px no-repeat;
 }
 
 .map-section__container {

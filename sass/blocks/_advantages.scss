@@ -14,7 +14,7 @@
     &:last-child {
       padding-right: 0;
 
-      @include mq-small{
+      @include mq-small {
         margin-bottom: 0;
       }
     }
@@ -37,7 +37,7 @@
     width: px2rem(67);
     height: px2rem(21);
     transform: translateX(50%);
-    background: url("/beats-solo/images/icons/circles.svg") center center no-repeat;
+    background: url("/beats-solo/images/icons/sprite.svg#circles") left top no-repeat;
 
     @include mq-medium {
       display: none;
