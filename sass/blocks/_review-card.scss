@@ -17,6 +17,10 @@
       width: px2rem(130);
       height: px2rem(130);
       margin: 0;
+      margin-bottom: px2rem(36);
+    }
+
+    @include mq-small {
       margin-bottom: px2rem(22);
     }
   }

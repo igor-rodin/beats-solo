@@ -1,5 +1,4 @@
 .map-section {  
-  &__container{
-    max-width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
 }

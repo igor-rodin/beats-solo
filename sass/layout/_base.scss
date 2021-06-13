@@ -45,6 +45,10 @@ body {
 
 html {
   font-size: #{$base-font-size}px;
+  
+  @include mq-small{
+    font-size: 2vmax;
+  }
 }
 
 body {

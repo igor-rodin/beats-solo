@@ -8,7 +8,7 @@
   }
 
   @include mq-small {
-    min-height: px2rem(800);
+    min-height: auto;
   }
 
   &__title {

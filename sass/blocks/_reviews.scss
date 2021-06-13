@@ -19,6 +19,10 @@
       left: calc(50% - #{px2rem(33)});
       background-color: #fff;
 
+      @include mq-medium {
+        top: px2rem(-46);
+      }
+
       @include mq-small {
         display: none;
       }
