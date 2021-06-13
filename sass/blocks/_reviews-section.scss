@@ -1,7 +1,6 @@
 .reviews-section {
   @include mq-medium {
     padding: 0 px2rem(22);
-    min-height: px2rem(976);
   }
 
   @include mq-small {

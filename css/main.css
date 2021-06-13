@@ -958,9 +958,6 @@ button {
   .advantages-section {
     padding-top: 2.375rem;
     padding-bottom: 3.375rem;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
   }
 }
 .advantages-section__text {
@@ -1161,7 +1158,6 @@ button {
 @media screen and (max-width: 768px) {
   .reviews-section {
     padding: 0 1.375rem;
-    min-height: 61rem;
   }
 }
 @media screen and (max-width: 480px) {
