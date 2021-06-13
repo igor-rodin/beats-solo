@@ -21,8 +21,6 @@
     }
 
     @include mq-small {
-      width: 130px;
-      height: 130px;
       margin-bottom: px2rem(22);
     }
   }

@@ -11,8 +11,8 @@
     transition: border-color 0.5s;
 
     @include mq-small {
-      width: 64px;
-      height: 64px;
+      width: px2rem(64);
+      height: px2rem(64);
     }
 
     &__link {

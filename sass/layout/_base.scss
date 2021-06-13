@@ -11,7 +11,8 @@ $btn-hover-bg-color: #CA1B36;
 $btn-color: #fff;
 $icon-color: #B3B3B3;
 $icon-hover-color: #000000;
-$welcome-font: 'Alegreya Sans', sans-serif;
+$welcome-font: 'Alegreya Sans',
+sans-serif;
 $secondary-font: 'Alegreya Sans',
 sans-serif;
 $base-font-size: 16;
@@ -45,66 +46,66 @@ body {
 
 html {
   font-size: #{$base-font-size}px;
-  
-  @include mq-small{
-    font-size: 2vmax;
-  }
-}
-
-body {
-  position: relative;
-  font-family: "Play", sans-serif;
-  color: $main-color;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.19;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-button {
-  border: none;
-  background: transparent;
-}
-
-.wrapper {
-  overflow: hidden;
-  width: 100%;
-}
-
-
-.container {
-  width: 98%;
-  max-width: px2rem(940);
-
-  @include mq-medium {
-    max-width: px2rem(776);
-  }
 
   @include mq-small {
-    max-width: px2rem(480);
+    font-size: 2vmax;
+    }
   }
 
-  margin: 0 auto;
+  body {
+    position: relative;
+    font-family: "Play", sans-serif;
+    color: $main-color;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.19;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+  }
+
+  .wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+
+  .container {
+    width: 98%;
+    max-width: px2rem(940);
+
+    @include mq-medium {
+      max-width: px2rem(776);
+    }
+
+    @include mq-small {
+      max-width: px2rem(480);
+    }
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }

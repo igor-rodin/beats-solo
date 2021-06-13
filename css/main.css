@@ -1196,8 +1196,8 @@ button {
 }
 @media screen and (max-width: 480px) {
   .avatar-picker {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
   }
 }
 .avatar-picker__link {
@@ -1240,8 +1240,6 @@ button {
 }
 @media screen and (max-width: 480px) {
   .review-card__user-avatar {
-    width: 130px;
-    height: 130px;
     margin-bottom: 1.375rem;
   }
 }
