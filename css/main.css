@@ -699,14 +699,32 @@ button {
 .button-togle {
   cursor: pointer;
 }
-.button-togle:hover .gamburger__stripe:nth-last-of-type(2) {
+.button-togle--cross {
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .button-togle--cross {
+    top: 15%;
+    right: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button-togle--cross {
+    top: 5%;
+    right: 8%;
+  }
+}
+.button-togle--cross .gamburger__stripe {
+  background-color: #ffffff;
+}
+.button-togle--cross .gamburger__stripe:nth-last-of-type(2) {
   opacity: 0;
 }
-.button-togle:hover .gamburger__stripe:nth-last-of-type(1) {
+.button-togle--cross .gamburger__stripe:nth-last-of-type(1) {
   -webkit-transform: translateY(-10px) rotate(45deg);
           transform: translateY(-10px) rotate(45deg);
 }
-.button-togle:hover .gamburger__stripe:nth-last-of-type(3) {
+.button-togle--cross .gamburger__stripe:nth-last-of-type(3) {
   -webkit-transform: translateY(10px) rotate(-45deg);
           transform: translateY(10px) rotate(-45deg);
 }
@@ -1638,5 +1656,46 @@ button {
     width: 1.5rem;
     height: 1.5rem;
   }
+}
+
+.menu-popup {
+  display: none;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #333537;
+  font-size: 2.25rem;
+  line-height: 2;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .menu-popup__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.menu-popup--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
