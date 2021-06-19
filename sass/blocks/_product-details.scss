@@ -5,5 +5,13 @@
   &__item {
     min-width: px2rem(104);
     margin-right: 20%;
+
+    @include mq-medium {
+      margin-right: px2rem(44);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
   }
 }

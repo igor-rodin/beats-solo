@@ -30,6 +30,10 @@
 
   &__column:not(:last-of-type) {
     margin-right: px2rem(59);
+
+    @include mq-medium {
+      margin-right: 0;
+    }
   }
 
   &__image {
@@ -40,6 +44,10 @@
       max-width: px2rem(306);
       min-height: px2rem(306);
       margin-bottom: px2rem(30);
+    }
+
+    @include mq-small {
+      margin-bottom: px2rem(14);
     }
 
   }
@@ -101,14 +109,15 @@
       line-height: 1.142;
       margin-bottom: px2rem(14);
     }
+
+    @include mq-small {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title-line:last-of-type {
     margin-left: px2rem(8);
-
-    // @include mq-medium {
-    //   margin-left: 0;
-    // }
   }
 
   &__description {
@@ -117,8 +126,12 @@
     margin-bottom: px2rem(24);
 
     @include mq-medium {
-      max-width: 82%;
       text-align: center;
+    }
+
+    @include mq-small {
+      max-width: 90%;
+      margin-bottom: px2rem(22);
     }
   }
 
@@ -137,5 +150,15 @@
     color: #151515;
     text-transform: uppercase;
     margin-right: px2rem(14);
+
+    @include mq-medium {
+      margin-right: px2rem(50);
+    }
+
+    @include mq-small {
+      margin-right: px2rem(20);
+      font-size: px2rem(32);
+      line-height: 1.875;
+    }
   }
 }

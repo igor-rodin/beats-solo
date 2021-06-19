@@ -1196,6 +1196,12 @@ button {
   margin-left: 2%;
   margin-right: -4%;
 }
+@media screen and (max-width: 768px) {
+  .products-slider {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .products-slider__buttons {
   position: absolute;
   display: -webkit-box;
@@ -1213,6 +1219,13 @@ button {
     top: 25%;
     right: 20%;
     left: 18%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-slider__buttons {
+    top: 22%;
+    right: 0;
+    left: 0;
   }
 }
 .products-slider__btn {
@@ -1292,6 +1305,14 @@ button {
   min-width: 6.5rem;
   margin-right: 20%;
 }
+@media screen and (max-width: 768px) {
+  .product-details__item {
+    margin-right: 2.75rem;
+  }
+  .product-details__item:last-of-type {
+    margin-right: 0;
+  }
+}
 
 .product__inner {
   display: -webkit-box;
@@ -1340,6 +1361,11 @@ button {
 .product__column:not(:last-of-type) {
   margin-right: 3.6875rem;
 }
+@media screen and (max-width: 768px) {
+  .product__column:not(:last-of-type) {
+    margin-right: 0;
+  }
+}
 .product__image {
   max-width: 28.25rem;
   min-height: 28.25rem;
@@ -1349,6 +1375,11 @@ button {
     max-width: 19.125rem;
     min-height: 19.125rem;
     margin-bottom: 1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__image {
+    margin-bottom: 0.875rem;
   }
 }
 .product__details-togle {
@@ -1418,6 +1449,17 @@ button {
     margin-bottom: 0.875rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .product__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .product__title-line:last-of-type {
   margin-left: 0.5rem;
 }
@@ -1428,8 +1470,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   .product__description {
-    max-width: 82%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__description {
+    max-width: 90%;
+    margin-bottom: 1.375rem;
   }
 }
 .product__row {
@@ -1449,6 +1496,18 @@ button {
   color: #151515;
   text-transform: uppercase;
   margin-right: 0.875rem;
+}
+@media screen and (max-width: 768px) {
+  .product__price {
+    margin-right: 3.125rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__price {
+    margin-right: 1.25rem;
+    font-size: 2rem;
+    line-height: 1.875;
+  }
 }
 
 .product-detail {
