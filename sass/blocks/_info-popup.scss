@@ -1,0 +1,39 @@
+.info-popup {
+  width: px2rem(274);
+  height: px2rem(294);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: px2rem(4) px2rem(4) px2rem(40) rgba(0, 0, 0, 0.06);
+  border-radius: px2rem(4);
+  padding: px2rem(14);
+  color: #000000;
+  // font-size: px2rem(16);
+  line-height: 1.5;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: px2rem(10) px2rem(12);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__wrap-icon {
+    width: px2rem(32);
+    height: px2rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: px2rem(12);
+  }
+
+  &__item-icon {
+    width: px2rem(24);
+    height: px2rem(24);
+  }
+
+  &__item-value {
+    margin-left: auto;
+  }
+}

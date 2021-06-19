@@ -1,0 +1,29 @@
+.products-slider {
+  position: relative;
+  margin-left: 2%;
+  margin-right: -4%;
+
+  &__buttons {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: 1%;
+    left: -5%;
+    justify-content: space-between;
+    @include mq-medium{
+      top: 25%;
+      right: 20%;
+      left: 18%;
+    }
+  }
+
+  &__btn {
+    width: px2rem(15);
+    height: px2rem(29);
+    fill: transparent;
+    stroke: black;
+    stroke-width: 2;
+    stroke-linecap: round;
+    cursor: pointer;
+  }
+}

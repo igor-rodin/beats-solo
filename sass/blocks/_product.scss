@@ -1,0 +1,141 @@
+.product {
+  $this: &;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include mq-medium {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__column:last-of-type {
+    @include mq-medium {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__column:first-of-type {
+    padding-top: px2rem(50);
+
+    @include mq-medium {
+      padding-top: 0;
+    }
+  }
+
+  &__column:not(:last-of-type) {
+    margin-right: px2rem(59);
+  }
+
+  &__image {
+    max-width: px2rem(452);
+    min-height: px2rem(452);
+
+    @include mq-medium {
+      max-width: px2rem(306);
+      min-height: px2rem(306);
+      margin-bottom: px2rem(30);
+    }
+
+  }
+
+  &__details-togle {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: px2rem(91);
+    height: px2rem(91);
+    border-radius: px2rem(4);
+    background-color: #9A9A9A;
+    margin-bottom: px2rem(25);
+    transition: background-color 0.5s;
+
+    @include mq-medium {
+      display: none;
+    }
+  }
+
+  &__details-togle:hover {
+    background-color: #6E6E6E;
+
+    #{$this}__info-popup {
+      opacity: 1;
+      top: 0;
+      right: -300%;
+    }
+  }
+
+  &__info-popup {
+    position: absolute;
+    opacity: 0;
+    right: -1000%;
+    transition: opacity 0.5s;
+
+    @include mq-medium {
+      display: none;
+    }
+  }
+
+  &__details-icon {
+    width: px2rem(42);
+    height: px2rem(42);
+  }
+
+  &__title {
+    font-size: px2rem(36);
+    line-height: 1.166;
+    margin-bottom: px2rem(24);
+
+
+    @include mq-medium {
+      display: flex;
+      justify-content: space-between;
+      font-size: px2rem(28);
+      line-height: 1.142;
+      margin-bottom: px2rem(14);
+    }
+  }
+
+  &__title-line:last-of-type {
+    margin-left: px2rem(8);
+
+    // @include mq-medium {
+    //   margin-left: 0;
+    // }
+  }
+
+  &__description {
+    color: $second-color;
+    max-width: 85%;
+    margin-bottom: px2rem(24);
+
+    @include mq-medium {
+      max-width: 82%;
+      text-align: center;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &--params {
+      margin-bottom: px2rem(24);
+    }
+  }
+
+  &__price {
+    font-size: px2rem(36);
+    line-height: 1.666;
+    color: #151515;
+    text-transform: uppercase;
+    margin-right: px2rem(14);
+  }
+}

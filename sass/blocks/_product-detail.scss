@@ -1,0 +1,13 @@
+.product-detail {
+  color: #000000;
+
+  &__caption {
+    color: $second-color;
+  }
+
+  &__value {
+    font-weight: bold;
+    font-size: px2rem(18);
+    line-height: 1.166;
+  }
+}

@@ -1,0 +1,9 @@
+.product-details {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    min-width: px2rem(104);
+    margin-right: 20%;
+  }
+}

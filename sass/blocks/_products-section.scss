@@ -1,0 +1,19 @@
+.products-section {
+  background-color: $bg-color-products;
+  &__container{
+    padding: 0 10px;
+  }
+
+  &::after {
+    z-index: 10;
+    position: absolute;
+    content: " ";
+    display: block;
+    width: px2rem(24);
+    height: px2rem(24);
+    background-color: #292929;
+    transform: rotate(29deg);
+    bottom: px2rem(-16);
+    right: 10%;
+  }
+}
