@@ -1226,6 +1226,7 @@ button {
 }
 
 .info-popup {
+  position: relative;
   width: 17.125rem;
   height: 18.375rem;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1268,6 +1269,15 @@ button {
 }
 .info-popup__item-value {
   margin-left: auto;
+}
+.info-popup::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  width: 5.625rem;
+  height: 18.375rem;
+  top: 0;
+  right: 100%;
 }
 
 .product-details {

@@ -1,4 +1,5 @@
 .info-popup {
+  position: relative;
   width: px2rem(274);
   height: px2rem(294);
   background-color: rgba(255, 255, 255, 0.8);
@@ -6,7 +7,6 @@
   border-radius: px2rem(4);
   padding: px2rem(14);
   color: #000000;
-  // font-size: px2rem(16);
   line-height: 1.5;
 
   &__item {
@@ -35,5 +35,15 @@
 
   &__item-value {
     margin-left: auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: transparent;
+    width: px2rem(90);
+    height: px2rem(294);
+    top: 0;
+    right: 100%;
   }
 }
