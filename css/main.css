@@ -1201,6 +1201,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 1%;
   left: -5%;
   -webkit-box-pack: justify;
@@ -1233,7 +1235,7 @@ button {
 
 .info-popup {
   position: relative;
-  width: 17.125rem;
+  min-width: 17.125rem;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0.25rem 0.25rem 2.5rem rgba(0, 0, 0, 0.06);
           box-shadow: 0.25rem 0.25rem 2.5rem rgba(0, 0, 0, 0.06);

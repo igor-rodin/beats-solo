@@ -1,6 +1,6 @@
 .info-popup {
   position: relative;
-  width: px2rem(274);
+  min-width: px2rem(274);
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: px2rem(4) px2rem(4) px2rem(40) rgba(0, 0, 0, 0.06);
   backdrop-filter: blur(px2rem(40));
