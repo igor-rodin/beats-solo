@@ -697,22 +697,14 @@ button {
 }
 
 .button-togle {
+  z-index: 100;
   cursor: pointer;
+  position: fixed;
+  top: 4%;
+  right: 5%;
 }
 .button-togle--cross {
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .button-togle--cross {
-    top: 15%;
-    right: 5%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .button-togle--cross {
-    top: 5%;
-    right: 8%;
-  }
+  position: fixed;
 }
 .button-togle--cross .gamburger__stripe {
   background-color: #ffffff;
@@ -776,6 +768,7 @@ button {
 }
 
 .menu {
+  position: relative;
   width: 40rem;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1.125rem;
@@ -2050,5 +2043,14 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 17%;
+}
+@media screen and (max-width: 480px) {
+  .menu-popup--active {
+    padding-top: 27%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
