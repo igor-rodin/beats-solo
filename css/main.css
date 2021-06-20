@@ -1237,6 +1237,8 @@ button {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0.25rem 0.25rem 2.5rem rgba(0, 0, 0, 0.06);
           box-shadow: 0.25rem 0.25rem 2.5rem rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(2.5rem);
+          backdrop-filter: blur(2.5rem);
   border-radius: 0.25rem;
   padding: 0.875rem;
   color: #000000;
