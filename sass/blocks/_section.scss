@@ -42,6 +42,18 @@
       }
     }
 
+    &--team {
+      margin-bottom: px2rem(54);
+
+      @include mq-medium {
+        margin-bottom: px2rem(34);
+      }
+
+      @include mq-small {
+        margin-bottom: px2rem(36);
+      }
+    }
+
     &--reviews {
       margin-bottom: px2rem(32);
 

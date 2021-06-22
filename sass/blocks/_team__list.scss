@@ -1,0 +1,9 @@
+.team__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include mq-medium {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

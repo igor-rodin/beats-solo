@@ -175,6 +175,9 @@
   <symbol id="rightArrow" viewBox="0 0 15 29">
     <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28" />
   </symbol>
+  <symbol id="selector" viewBox="0 0 8 7">
+    <path d="M4 7L0.102887 0.249999L7.89711 0.25L4 7Z" />
+  </symbol>
   <view id="triangel-view" viewBox="0 0 34 34" />
   <use xlink:href="#circles" width="67" height="21" x="0" y="0"></use>
   <use xlink:href="#triangel" width="34" height="34" x="0" y="21"></use>
