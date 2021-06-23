@@ -458,7 +458,7 @@
         <div class="container ">
           <h2 class="section__title section__title--reviews">отзывы</h2>
           <div class="reviews">
-            <article class="reviews__card review-card">
+            <article class="reviews__card reviews__card--active review-card">
               <div class="review-card__user-avatar avatar"><img src="./images/User-1.jpg" alt="User-1 photo"></div>
               <div class="review-card__content">
                 <h3 class="review-card__title">Отличный звук</h3>
@@ -470,11 +470,35 @@
                 <div class="review-card__user-name">Билли Айлиш</div>
               </div>
             </article>
-            
+            <article class="reviews__card review-card">
+              <div class="review-card__user-avatar avatar"><img src="./images/User-2.jpg" alt="User-2 photo"></div>
+              <div class="review-card__content">
+                <h3 class="review-card__title">Крутой дизайн</h3>
+                <div class="review-card__text">
+                  <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать
+                  хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный
+                  продукт.</p>
+                </div>
+                <div class="review-card__user-name">Вадим Грачев
+                </div>
+              </div>
+            </article>
+            <article class="reviews__card review-card">
+              <div class="review-card__user-avatar avatar"><img src="./images/User-3.jpg" alt="User-3 photo"></div>
+              <div class="review-card__content">
+                <h3 class="review-card__title">На долго хватает заряда</h3>
+                <div class="review-card__text">
+                  <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того
+                  стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не
+                  надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
+                </div>
+                <div class="review-card__user-name">Мария Орлова</div>
+              </div>
+            </article>
             <ul class="reviews__picker">
-              <li class="reviews__picker-item  avatar-picker avatar-picker--active"><a href="#" class="avatar-picker__link"><img src="./images/User-1.jpg" alt="User-1 photo" class="reviews__piker-image"></a></li>
-              <li class="reviews__picker-item  avatar-picker"><a href="#" class="avatar-picker__link"><img src="./images/user-2.jpg" alt="User-2 photo" class="reviews__piker-image"></a></li>
-              <li class="reviews__picker-item  avatar-picker"><a href="#" class="avatar-picke__link"><img src="./images/user-3.jpg" alt="User-3 photo" class="reviews__piker-image"></a></li>
+              <li class="reviews__picker-item reviews__picker--active avatar-picker" data-slide-id='1'><a href="#" class="avatar-picker__link"><img src="./images/User-1.jpg" alt="User-1 photo" class="reviews__piker-image"></a></li>
+              <li class="reviews__picker-item  avatar-picker" data-slide-id='2'><a href="#" class="avatar-picker__link"><img src="./images/user-2.jpg" alt="User-2 photo" class="reviews__piker-image"></a></li>
+              <li class="reviews__picker-item  avatar-picker" data-slide-id='3'><a href="#" class="avatar-picke__link"><img src="./images/user-3.jpg" alt="User-3 photo" class="reviews__piker-image"></a></li>
             </ul>
             
           </div>
@@ -649,5 +673,6 @@
   <script src="./js/menu.js"></script>
   <script src="./js/accardeon.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="./js/slideShow.js"></script>
 </body>
 </html>

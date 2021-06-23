@@ -1,8 +1,15 @@
 .reviews {
   &__card {
     position: relative;
+
     margin-bottom: px2rem(15);
     overflow: hidden;
+    display: none;
+
+    &--active {
+      display: flex;
+    }
+
 
     @include mq-medium {
       margin-bottom: px2rem(46);
@@ -39,6 +46,10 @@
       &:hover {
         border: px2rem(4) solid $hover-text-color;
       }
+    }
+
+    &--active {
+      border: px2rem(4) solid $hover-text-color;
     }
   }
 }
