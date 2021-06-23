@@ -710,7 +710,7 @@ button {
 }
 
 .button-togle {
-  z-index: 100;
+  z-index: 200;
   cursor: pointer;
   position: fixed;
   top: 4%;
@@ -1209,7 +1209,7 @@ button {
   }
 }
 .products-slider__buttons {
-  z-index: 20;
+  z-index: 10;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2218,6 +2218,7 @@ button {
 }
 
 .menu-popup {
+  z-index: 100;
   display: none;
   position: fixed;
   -webkit-box-pack: center;
