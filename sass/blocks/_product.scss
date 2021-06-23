@@ -116,6 +116,10 @@
     }
   }
 
+  &__title-line{
+    text-align: center;
+  }
+  
   &__title-line:last-of-type {
     margin-left: px2rem(8);
   }

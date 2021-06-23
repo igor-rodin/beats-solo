@@ -1209,6 +1209,7 @@ button {
   }
 }
 .products-slider__buttons {
+  z-index: 20;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1468,6 +1469,9 @@ button {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.product__title-line {
+  text-align: center;
 }
 .product__title-line:last-of-type {
   margin-left: 0.5rem;
