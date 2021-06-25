@@ -3,11 +3,11 @@
   min-height: 55vh; 
 
   @include mq-medium {
-    margin-bottom: px2rem(16);
+    margin-bottom: px2rem(4);
     min-height: auto;
   }
 
   @include mq-small {
-    margin-bottom: px2rem(6);
+    margin-bottom: 0;
   }
 }

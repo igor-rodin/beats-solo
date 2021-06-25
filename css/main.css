@@ -1547,13 +1547,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   .team__item {
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     min-height: auto;
   }
 }
 @media screen and (max-width: 480px) {
   .team__item {
-    margin-bottom: 0.375rem;
+    margin-bottom: 0;
   }
 }
 
@@ -1611,7 +1611,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .team-member__photo--toggle {
-    margin-bottom: 1.125rem;
+    margin-bottom: 1.625rem;
     width: 8.625rem;
     height: 11.25rem;
   }
