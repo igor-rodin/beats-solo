@@ -2,6 +2,9 @@ $(document).ready(() => {
   const picker = $('.reviews__picker');
   $(picker).on('click', event => {
       event.preventDefault();
+      if (event.target === picker[0]) {
+        return;
+      }
 
       const activeAvatar = $('.reviews__picker--active');
       $(activeAvatar).removeClass('reviews__picker--active');
