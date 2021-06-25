@@ -1802,6 +1802,8 @@ button {
 }
 .review-card__user-avatar {
   margin-right: 2.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 @media screen and (max-width: 768px) {
   .review-card__user-avatar {
@@ -2344,5 +2346,8 @@ button {
 
 .overlay__text {
   margin-bottom: 1.125rem;
+}
+.overlay__text--error {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */

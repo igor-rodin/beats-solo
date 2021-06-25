@@ -12,6 +12,7 @@
 
   &__user-avatar {
     margin-right: px2rem(40);
+    align-self: flex-start;
 
     @include mq-medium {
       width: px2rem(130);

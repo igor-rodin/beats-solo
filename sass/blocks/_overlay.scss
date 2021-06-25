@@ -24,4 +24,7 @@
 
 .overlay__text {
   margin-bottom: px2rem(18);
+  &--error{
+    color: red;
+  }
 }
