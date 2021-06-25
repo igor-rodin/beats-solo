@@ -1,0 +1,27 @@
+.overlay {
+  display: flex;
+  z-index: 300;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $bg-overlay;
+}
+
+.overlay__content {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: px2rem(18);
+  line-height: 1.333;
+  text-align: center;
+  padding: px2rem(37) px2rem(54);
+
+}
+
+.overlay__text {
+  margin-bottom: px2rem(18);
+}

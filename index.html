@@ -507,41 +507,43 @@
       <section id="form" class="section form-section">
         <div class="container">
           <h2 class="section__title section__title--form">закажите доставку</h2>
-          <form class="form">
+          <form id="orderForm" class="form" autocomplete="off">
             <div class="form__inner">
               <div class="form__column">
                 <div class="form__row">
                   <label class="form-element form__row-element">
                     <div class="form-element__text">Имя</div>
-                    <input class="form-element__input" type="text">
+                    <input class="form-element__input" type="text" name="name" required>
+                    <div class="form-element__error"></div>
                   </label>
                   <label class="form-element form__row-element form__row-element--active">
                     <div class="form-element__text">Телефон</div>
-                    <input class="form-element__input" type="text">
+                    <input class="form-element__input" type="tel" name="phone" required>
+                    <div class="form-element__error"></div>
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form-element form__row-element">
                     <div class="form-element__text">Улица</div>
-                    <input class="form-element__input" type="text">
+                    <input class="form-element__input" type="text" name="street">
                   </label>
                 </div>
                 <div class="form__row">
                     <label class="form-element form__row-element">
                       <div class="form-element__text">Дом</div>
-                      <input class="form-element__input" type="text">
+                      <input class="form-element__input" type="text" name="house">
                     </label>
                     <label class="form-element form__row-element">
                       <div class="form-element__text">Корпус</div>
-                      <input class="form-element__input" type="text">
+                      <input class="form-element__input" type="text" name="housing">
                     </label>
                     <label class="form-element form__row-element">
                       <div class="form-element__text">Квартира</div>
-                      <input class="form-element__input" type="text">
+                      <input class="form-element__input" type="text" name="flat">
                     </label>
                     <label class="form-element form__row-element">
                       <div class="form-element__text">Этаж</div>
-                      <input class="form-element__input" type="text">
+                      <input class="form-element__input" type="text" name="floor">
                     </label>
                 </div>
               </div>
@@ -549,17 +551,18 @@
                 <div class="form__row">
                   <label class="form-element form__row-element">
                     <div class="form-element__text">Комментарий</div>
-                    <textarea class="form-element__input form-element__input--textarea "name="comments" ></textarea>
+                    <textarea class="form-element__input form-element__input--textarea" name="comment" required></textarea>
+                    <div class="form-element__error"></div>
                   </label>
                 </div>
                 <div class="form__row form__row--controls" >
                   <label class="form-control form__row--control">
-                    <input class="form-control__elem" type="radio"  name="options">
+                    <input class="form-control__elem" type="radio"  name="options" value="cash">
                     <div class="form-control__visual"></div>
                     <div class="form-control__text">Потребуется сдача</div>
                   </label>
                   <label class="form-control form__row--control">
-                    <input class="form-control__elem" type="radio"  name="options" checked>
+                    <input class="form-control__elem" type="radio"  name="options" value="card" checked>
                     <div class="form-control__visual"></div>
                     <div class="form-control__text">Оплата картой</div>
                   </label>
@@ -572,7 +575,7 @@
                   </label>
                 </div>
                 <div class="form__row form__row--buttons">
-                  <button class="button" type="submit">ЗАКАЗАТЬ</button>
+                  <button id="btnSubmit" class="button" type="submit">ЗАКАЗАТЬ</button>
                   <button class="button button--theme-transparent" type="reset">Очистить</button>
                 </div>
               </div>
@@ -668,11 +671,22 @@
       </li>
     </ul>
   </nav>
+
+  <template id="modalTemplate">
+    <div class="overlay">
+      <div class="overlay__content">
+        <div class="overlay__text"></div>
+        <button class="button overlay__button"></button>
+      </div>
+    </div>
+  </template>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./owlcarousel/owl.carousel.min.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/accardeon.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/slideShow.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 </html>
