@@ -17,6 +17,7 @@
     @include mq-medium {
       width: px2rem(130);
       height: px2rem(130);
+      align-self: center;
       margin: 0;
       margin-bottom: px2rem(36);
     }

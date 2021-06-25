@@ -1809,6 +1809,9 @@ button {
   .review-card__user-avatar {
     width: 8.125rem;
     height: 8.125rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin: 0;
     margin-bottom: 2.25rem;
   }
