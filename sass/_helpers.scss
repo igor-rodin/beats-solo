@@ -3,7 +3,9 @@
   @if $size_px !=1 {
     @return #{$size_px/$base-font-size}rem
   }
-};
+}
+
+;
 
 // media queries mixins
 @mixin mq-medium {

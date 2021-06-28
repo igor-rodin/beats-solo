@@ -103,25 +103,16 @@
 
 
     @include mq-medium {
-      display: flex;
-      justify-content: space-between;
+      text-align: center;
+      margin: 0 auto;
       font-size: px2rem(28);
       line-height: 1.142;
       margin-bottom: px2rem(14);
     }
 
     @include mq-small {
-      flex-direction: column;
-      align-items: center;
+      max-width: 90%;
     }
-  }
-
-  &__title-line{
-    text-align: center;
-  }
-  
-  &__title-line:last-of-type {
-    margin-left: px2rem(8);
   }
 
   &__description {

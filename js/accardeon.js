@@ -1,5 +1,5 @@
 $(document).ready (()=> {
-  $(team).on('click', event => {
+  $('#team').on('click', event => {
     const memberHeader = event.target.closest('.team-member__header');
     $(memberHeader).toggleClass('team-member__header--active');
     const toggleWrap = $(memberHeader).siblings('.team-member__wrap-content');
