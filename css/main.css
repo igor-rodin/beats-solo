@@ -408,6 +408,7 @@ img {
 }
 
 button {
+  color: inherit;
   border: none;
   background: transparent;
 }
@@ -504,6 +505,12 @@ button {
   .section__title--team {
     margin-bottom: 2.25rem;
   }
+}
+.section__title--colors {
+  width: 16.875rem;
+  color: #fff;
+  padding-left: 3.375rem;
+  padding-top: 7.1875rem;
 }
 .section__title--reviews {
   margin-bottom: 2rem;
@@ -1711,6 +1718,107 @@ button {
   .team-member__info {
     max-width: 50%;
   }
+}
+
+.colors-section {
+  background: #000000 url("/beats-solo/images/colors/colors-bg.png") right center/cover no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .colors-section {
+    min-height: 56.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .colors-section {
+    min-height: 39.625rem;
+  }
+}
+
+.colors-section__container {
+  min-width: 100%;
+}
+
+.colors-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #fff;
+}
+
+.colors {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.colors__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.colors__item:nth-of-type(1) .color-item__header {
+  background-color: #999999;
+}
+.colors__item:nth-of-type(2) .color-item__header {
+  background-color: #151515;
+}
+.colors__item:nth-of-type(3) .color-item__header {
+  background-color: #E01F3C;
+}
+
+.color-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color-item__toggle {
+  cursor: pointer;
+}
+
+.color-item__header {
+  height: 100%;
+  text-align: left;
+  font-size: 2.25rem;
+  line-height: 1.194;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding: 1.875rem 1.875rem 2.125rem;
+}
+@media screen and (max-width: 480px) {
+  .color-item__header {
+    padding: 1.5rem 1.875rem 2.125rem;
+  }
+}
+
+.color-item__toggle-text {
+  width: 0;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  overflow: hidden;
+  background-color: rgba(51, 53, 55, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.color-item__text {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.875rem 3.375rem 0 2.375rem;
+  line-height: 1.5;
 }
 
 .reviews-section {

@@ -54,6 +54,13 @@
       }
     }
 
+    &--colors {
+      width: px2rem(270);
+      color: $form-text-color;
+      padding-left: px2rem(54);
+      padding-top: px2rem(115);
+    }
+
     &--reviews {
       margin-bottom: px2rem(32);
 

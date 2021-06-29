@@ -1,0 +1,15 @@
+.colors-section {
+  background: #000000 url('/beats-solo/images/colors/colors-bg.png') right center/cover no-repeat;
+
+  @include mq-medium {
+    min-height: px2rem(908);
+  }
+
+  @include mq-small {
+    min-height: px2rem(634);
+  }
+}
+
+.colors-section__container{
+  min-width: 100%;
+}
