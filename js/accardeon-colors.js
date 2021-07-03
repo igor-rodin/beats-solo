@@ -1,11 +1,9 @@
 $(document).ready (()=> {
   const MEDIUM_SIZE = 768;
-  const SMALL_SIZE = 480;
-
-  const colorItemsWidth = $('.colors__item').length  * $('.color-item__header').outerWidth();
-  
+  const DESCKTOP_WIDTH = 524;
 
   $('#colors-list').on('click', event => {
+    
     const activeColorItem = $('.colors__item--active');
     const targetColorItem = event.target.closest('.colors__item');
 
@@ -13,7 +11,6 @@ $(document).ready (()=> {
     
 
     const wrapText = $(targetColorItem).find('.color-item__toggle-text');
-
     const newWidth = (wrapText.width() === 0) ? getWrapWidth($(document)) : 0;
     wrapText.width(newWidth);
 
@@ -21,18 +18,16 @@ $(document).ready (()=> {
       toggleSectionHeader($('.section__title--colors'));
     }
     
-    activeColorItem.removeClass('colors__item--active');
     activeColorItem.find('.color-item__toggle-text').width(0);
+    activeColorItem.removeClass('colors__item--active');
   })
 
   getWrapWidth = window => {
-    const itemWidth = $('.color-item__header').outerWidth();
-    console.log('itemWidth', itemWidth);
+    const itemWidth = $('.color-item__toggle').width();
     const allItemsWidth = $('.colors__item').length  * itemWidth;
-    const headerWidth = $('.section__title--colors').outerWidth();
     
     if (window.width() > MEDIUM_SIZE) {
-      return window.width() - allItemsWidth - headerWidth;
+      return DESCKTOP_WIDTH;
     }
     else {
       return window.width() - allItemsWidth;

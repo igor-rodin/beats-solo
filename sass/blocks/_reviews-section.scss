@@ -10,7 +10,7 @@
   text-align: center;
 
   &::after {
-    z-index: 10;
+    z-index: 20;
     position: absolute;
     content: "";
     display: block;

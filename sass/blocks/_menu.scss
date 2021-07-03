@@ -5,21 +5,26 @@
   font-size: px2rem(18);
   line-height: 1.67;
 
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    &__item {
-      transition: color 0.5s;
-    }
+  &__item {
+    transition: color 0.5s;
 
-    &__item:hover {
-      color: $hover-text-color;
-    }
-
-    &__link {
-      white-space: nowrap;
+    &--active {
+        color: $hover-text-color;
     }
   }
+
+
+  &__item:hover {
+    color: $hover-text-color;
+  }
+
+  &__link {
+    white-space: nowrap;
+  }
+}

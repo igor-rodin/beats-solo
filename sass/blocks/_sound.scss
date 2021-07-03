@@ -1,0 +1,57 @@
+.sound {
+  display: flex;
+  align-items: center;
+  flex: 0 0 px2rem(96);
+}
+
+.sound__btn {
+  position: relative;
+  cursor: pointer;
+  width: px2rem(13);
+  height: px2rem(16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: px2rem(25);
+
+  @include mq-medium {
+    width: px2rem(12);
+    height: px2rem(14);
+  }
+
+  @include mq-small {
+    width: px2rem(7.7);
+    height: px2rem(9.5);
+  }
+
+  &.mute::before {
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    left: 50%;
+    top: -25%;
+    width: 3px;
+    height: px2rem(24);
+    background-color: $btn-bg-color;
+    transform: rotateZ(-45deg);
+
+    @include mq-medium {
+      height: px2rem(14);
+    }
+  }
+}
+
+.sound__btn-img {
+  width: 13px;
+  height: 16px;
+  fill: white;
+}
+
+.sound__volume {
+  flex: 1;
+}
+
+.sound__control {
+  display: block;
+  width: 100%;
+}

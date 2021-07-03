@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <div class="main-content">
-      <section class="section welcome-section">
+      <section class="section welcome-section section--active" data-slide-id="1">
         <div class="container welcome-section__container">
           <header class="main-header">
             <div class="logo">
@@ -19,27 +19,27 @@
                 <use xlink:href="./images/icons/sprite.svg#logo"></use>
               </svg>
             </div>
-            <nav class="menu main-header__menu">
+            <nav id="main-menu" class="menu main-header__menu">
               <ul class="menu__list">
-                <li class="menu__item">
+                <li class="menu__item menu__item--active" data-slide-to="2">
                   <a href="#" class="menu_link">О нас</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item" data-slide-to="3">
                   <a href="#shop" class="menu_link">Наушники</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item" data-slide-to="4">
                   <a href="#" class="menu_link">Команда</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item" data-slide-to="5">
                   <a href="#" class="menu_link">Цвета</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item" data-slide-to="6">
                   <a href="#reviews" class="menu_link">Отзывы</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item" data-slide-to="7">
                   <a href="#" class="menu_link">Как мы работаем</a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item" data-slide-to="9">
                   <a href="#form" class="menu_link">Контакты</a>
                 </li>
               </ul>
@@ -67,7 +67,7 @@
                   из линейки Powerbeats.
                 </p>
               </div>
-              <a href="#" class="button welcome-section__button">ЗАКАЗАТЬ</a>
+              <a id="order-btn" href="#" class="button welcome-section__button">ЗАКАЗАТЬ</a>
             </div>
             <div class="product-avatar welcome-section__product-image">
               <img src="./images/beats-welcome.png" alt="beats solo" class="product-avatar__image">
@@ -101,7 +101,7 @@
           </ul>
         </div>
       </section>
-      <section id="features" class="section advantages-section">
+      <section class="section advantages-section" data-slide-id="2">
         <div class="container">
           <h2 class="section__title section__title--features">почему beats solo 3?</h2>
           <div class="advantages-section__text"><p>
@@ -152,7 +152,7 @@
           </ul>
         </div>
       </section>
-      <section id="shop" class="section products-section">
+      <section class="section products-section" data-slide-id="3">
         <div class="container products-section__container">
           <div class="products-slider">
             <div class="products-slider__buttons">
@@ -351,9 +351,8 @@
             </ul>  
             </div>
           </div>
-        </div>
       </section>
-      <section id="team" class="section team-section">
+      <section class="section team-section" data-slide-id="4">
         <div class="container">
           <h2 class="section__title section__title--team">команда</h2>
           <div class="team">
@@ -457,14 +456,14 @@
           </div>
         </div>
       </section>
-      <section class="section colors-section">
+      <section  class="section colors-section" data-slide-id="5">
         <div class="container colors-section__container">
           <div class="colors-wrapper">
             <h2 class="section__title section__title--colors">цвета</h2>
             <div class="colors">
               <ul id="colors-list" class="colors__list">
                 <li class="colors__item color-item">
-                  <button class="color-item__toggle"><h3 class="color-item__header">«Атласное серебро»</h3></button>
+                  <button  class="color-item__toggle"><span class="color-item__header">«Атласное серебро»</span></button>
                   <div class="color-item__toggle-text">
                     <div class="color-item__text">
                       <p>
@@ -477,9 +476,7 @@
                   </div>
                 </li>
                 <li class="colors__item  color-item">
-                  <button class="color-item__toggle">
-                    <h3 class="color-item__header">«Чёрный матовый»</h3>
-                  </button>
+                  <button class="color-item__toggle"><span class="color-item__header">«Чёрный матовый»</span></button>
                   <div class="color-item__toggle-text">
                     <div class="color-item__text">
                       <p>
@@ -494,9 +491,7 @@
                   </div>
                 </li>
                 <li class="colors__item color-item">
-                  <button class="color-item__toggle">
-                    <h3 class="color-item__header">«Красный цитрус»</h3>
-                  </button>
+                  <button  class="color-item__toggle"><span class="color-item__header">«Красный цитрус»</span></button>
                   <div class="color-item__toggle-text">
                     <div class="color-item__text">
                       <p>
@@ -515,7 +510,7 @@
           </div>
         </div>
       </section>
-      <section id="reviews" class="section reviews-section">
+      <section  class="section reviews-section" data-slide-id="6">
         <div class="container ">
           <h2 class="section__title section__title--reviews">отзывы</h2>
           <div class="reviews">
@@ -567,7 +562,46 @@
           </div>
         </div>
       </section>
-      <section id="form" class="section form-section">
+      <section class="section video-section" data-slide-id="7">
+        <div class="container video-section__container">
+          <h2 class="section__title section__title--video">как мы работаем</h2>
+          <div class="video">
+            <div class="video__player">
+              <video id="video" class="video__view" src="./media/MonsterBeats.mp4" type="video/mpeg4" poster="./media/splash.png">
+                Your browser does not support the video tag.
+              </video>
+              <button class="video__player-run">
+                <svg class="video__player-icon">
+                  <use xlink:href="./images/icons/sprite.svg#play"/>
+                </svg>
+              </button>
+            </div>
+            <div class="video__controls">
+              <div class="duration">
+                <button id='durationBtn' class="duration__btn">
+                  <svg class="duration__btn-img">
+                    <use xlink:href="./images/icons/sprite.svg#play"/>
+                  </svg>
+                </button>
+                <div class="duration__length">
+                  <input id="durationLength" class="control-range duration__control" type="range">
+                </div>
+              </div>
+              <div class="sound">
+                <button id="soundBtn" class="sound__btn">
+                  <svg class="sound__btn-img">
+                    <use xlink:href="./images/icons/sprite.svg#volume"/>
+                  </svg>
+                </button>
+                <div class="sound__volume">
+                  <input id="soundVolume" class="control-range sound__control" type="range">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="section form-section" data-slide-id="8">
         <div class="container">
           <h2 class="section__title section__title--form">закажите доставку</h2>
           <form id="orderForm" class="form" autocomplete="off">
@@ -646,8 +680,8 @@
           </form>
         </div>
       </section>
-      <section id="map" class="section map-section">
-        <div class="map"></div>
+      <section id="s7" class="section map-section" data-slide-id="9">
+        <div id="ya-map" class="map"></div>
         <footer class="footer">
           <div class="footer__container">
             <address class="contacts footer__contacts">
@@ -696,41 +730,41 @@
       </section>
     </div>
   </div>
-  <nav class="side-menu">
+  <nav id="side-menu" class="side-menu">
     <ul class="side-menu__list">
-      <li class="side-menu__item side-menu__item--active"><a href="./" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#shop" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#reviews" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#form" class="side-menu__link"></a></li>
-      <li class="side-menu__item"><a href="#map" class="side-menu__link"></a></li>
+      <li class="side-menu__item side-menu__item--active" data-slide-to="1"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="2"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="3"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="4"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="5"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="6"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="7"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="8"><a href="#" class="side-menu__link"></a></li>
+      <li class="side-menu__item" data-slide-to="9"><a href="#" class="side-menu__link"></a></li>
     </ul>
   </nav>
   <nav id="popupMenu" class="menu-popup">
     <ul class="menu-popup__list">
       <li class="menu__item">
-        <a href="#" class="menu_link">О нас</a>
+        <a href="#" class="menu_link" data-slide-to="2">О нас</a>
       </li>
       <li class="menu__item">
-        <a href="#shop" class="menu_link">Наушники</a>
+        <a href="#shop" class="menu_link" data-slide-to="3">Наушники</a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu_link">Команда</a>
+        <a href="#" class="menu_link" data-slide-to="4">Команда</a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu_link">Цвета</a>
+        <a href="#" class="menu_link" data-slide-to="5">Цвета</a>
       </li>
       <li class="menu__item">
-        <a href="#reviews" class="menu_link">Отзывы</a>
+        <a href="#reviews" class="menu_link" data-slide-to="6">Отзывы</a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu_link">Как мы работаем</a>
+        <a href="#" class="menu_link" data-slide-to="7">Как мы работаем</a>
       </li>
       <li class="menu__item">
-        <a href="#form" class="menu_link">Контакты</a>
+        <a href="#form" class="menu_link" data-slide-to="9">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -752,5 +786,10 @@
   <script src="./js/slider.js"></script>
   <script src="./js/slideShow.js"></script>
   <script src="./js/form.js"></script>
+  <script src="./js/video.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="./js/map.js"></script>
+  <script src="./js/scroll-page.js"></script>
 </body>
 </html>
