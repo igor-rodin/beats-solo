@@ -21,6 +21,7 @@ sass.compiler = require("node-sass");
 const env = process.env.NODE_ENV;
 
 task("clean", () => {
+  console.log(env);
   return src(`${DIST_PATH}/**/*`, { read: false }).pipe(rm());
 });
 
