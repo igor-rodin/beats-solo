@@ -1,4 +1,4 @@
-$(document).ready (()=> {
+$(function(){
   $('#team-list').on('click', event => {
     const memberHeader = event.target.closest('.team-member__header');
     $(memberHeader).toggleClass('team-member__header--active');
@@ -20,4 +20,4 @@ $(document).ready (()=> {
     $(activeItem).removeClass('team-member__header--active');
     $(activeItem).siblings('.team-member__wrap-content').height(0);
   })
-})
+});

@@ -37,7 +37,7 @@
     width: px2rem(67);
     height: px2rem(21);
     transform: translateX(50%);
-    background: url("/beats-solo/images/icons/sprite.svg#circles") left top no-repeat;
+    background: url("./images/icons/sprite.svg#circles") left top no-repeat;
 
     @include mq-medium {
       display: none;

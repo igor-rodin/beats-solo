@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(function(){
   const picker = $('.reviews__picker');
   $(picker).on('click', event => {
       event.preventDefault();
@@ -20,5 +20,5 @@ $(document).ready(() => {
       $(currentCard).removeClass('reviews__card--active');
       $(nextCard).addClass('reviews__card--active'); 
   })
-})
+});
 

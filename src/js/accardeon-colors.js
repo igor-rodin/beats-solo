@@ -1,4 +1,4 @@
-$(document).ready (()=> {
+$(function(){
   const MEDIUM_SIZE = 768;
   const DESCKTOP_WIDTH = 524;
 
@@ -43,4 +43,4 @@ $(document).ready (()=> {
       header.css('display', 'block');
     }
   }
-})
+});

@@ -1,4 +1,4 @@
-$(document).ready(()=> {
+$(function() {
   const slider = $('.owl-carousel');
   slider.owlCarousel({nav: false, items: 1, loop: true});
 
@@ -9,4 +9,4 @@ $(document).ready(()=> {
   $('.products-slider__btn--next').on('click', ()=> {
     slider.trigger('next.owl.carousel', [300]);
   })
-})
+});
