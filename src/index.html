@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Beats Solo</title>
-  <link rel="stylesheet" href="./libs/owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="./libs/owlcarousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./libs/owlcarousel/owl.carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="./libs/owlcarousel/owl.theme.default.min.css"> -->
+  <link rel="stylesheet" href="./main.min.css">
 </head>
 <body>
   <div class="wrapper">
@@ -50,13 +50,6 @@
               </svg>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
-            <button id="menuOpenBtn" class="button-togle  main-header__togle" aria-label="Показать меню">
-              <div class="gamburger">
-                <span class="gamburger__stripe"></span>
-                <span class="gamburger__stripe"></span>
-                <span class="gamburger__stripe"></span>
-              </div>
-            </button>
           </header>
           <div class="welcome-section__content">
             <div class="welcome-section__body">
@@ -67,7 +60,7 @@
                   из линейки Powerbeats.
                 </p>
               </div>
-              <a id="order-btn" href="#" class="button welcome-section__button">ЗАКАЗАТЬ</a>
+              <a href="#" class="button order-btn welcome-section__button">ЗАКАЗАТЬ</a>
             </div>
             <div class="product-avatar welcome-section__product-image">
               <img src="./images/beats-welcome.png" alt="beats solo" class="product-avatar__image">
@@ -249,7 +242,7 @@
                         <span class="product__price-currency">₽</span>
                       </div>
                       <div class="product__order">
-                        <a href="#" class="button">заказать</a>
+                        <a href="#" class="order-btn button">заказать</a>
                       </div>
                     </div>
                   </div>
@@ -342,7 +335,7 @@
                         <span class="product__price-currency">₽</span>
                       </div>
                       <div class="product__order">
-                        <a href="#" class="button">заказать</a>
+                        <a href="#" class="button order-btn">заказать</a>
                       </div>
                     </div>
                   </div>
@@ -743,28 +736,35 @@
       <li class="side-menu__item" data-slide-to="9"><a href="#" class="side-menu__link"></a></li>
     </ul>
   </nav>
+  <button id="menuOpenBtn" class="button-togle  main-header__togle" aria-label="Показать меню">
+    <div class="gamburger">
+      <span class="gamburger__stripe"></span>
+      <span class="gamburger__stripe"></span>
+      <span class="gamburger__stripe"></span>
+    </div>
+  </button>
   <nav id="popupMenu" class="menu-popup">
     <ul class="menu-popup__list">
-      <li class="menu__item">
-        <a href="#" class="menu_link" data-slide-to="2">О нас</a>
+      <li class="menu__item menu-popup__item--active"  data-slide-to="2">
+        <a href="#" class="menu_link">О нас</a>
       </li>
-      <li class="menu__item">
-        <a href="#shop" class="menu_link" data-slide-to="3">Наушники</a>
+      <li class="menu__item" data-slide-to="3">
+        <a href="#shop" class="menu_link">Наушники</a>
       </li>
-      <li class="menu__item">
-        <a href="#" class="menu_link" data-slide-to="4">Команда</a>
+      <li class="menu__item" data-slide-to="4">
+        <a href="#" class="menu_link" >Команда</a>
       </li>
-      <li class="menu__item">
-        <a href="#" class="menu_link" data-slide-to="5">Цвета</a>
+      <li class="menu__item" data-slide-to="5">
+        <a href="#" class="menu_link">Цвета</a>
       </li>
-      <li class="menu__item">
-        <a href="#reviews" class="menu_link" data-slide-to="6">Отзывы</a>
+      <li class="menu__item" data-slide-to="6">
+        <a href="#reviews" class="menu_link">Отзывы</a>
       </li>
-      <li class="menu__item">
-        <a href="#" class="menu_link" data-slide-to="7">Как мы работаем</a>
+      <li class="menu__item" data-slide-to="7">
+        <a href="#" class="menu_link">Как мы работаем</a>
       </li>
-      <li class="menu__item">
-        <a href="#form" class="menu_link" data-slide-to="9">Контакты</a>
+      <li class="menu__item" data-slide-to="9">
+        <a href="#form" class="menu_link">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -778,7 +778,7 @@
     </div>
   </template>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./libs/owlcarousel/owl.carousel.min.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/accardeon.js"></script>
@@ -790,6 +790,9 @@
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
   </script>
   <script src="./js/map.js"></script>
-  <script src="./js/scroll-page.js"></script>
+  <script type="text/javascript" src="./libs/mobile-detect/mobile-detect.min.js"></script>
+  <script type="text/javascript" src="./libs/touch-swipe/jquery.touchSwipe.min.js"></script>
+  <script src="./js/scroll-page.js"></script> -->
+  <script src="./main.mmin.js"></script>
 </body>
 </html>

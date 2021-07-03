@@ -4,7 +4,6 @@
 
   openBtn.addEventListener('click', event => {
     popupMenu.classList.toggle('menu-popup--active');
-    document.body.classList.toggle('scroll-hidden');
 
     openBtn.classList.toggle('button-togle--cross');
   });

@@ -1,0 +1,20 @@
+.video-section {
+  background-color: $bg-color-video;
+
+  &::after {
+    z-index: 10;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("/beats-solo/images/icons/sprite.svg#penta") left 0px top -195px no-repeat;
+    bottom: px2rem(-25);
+    transform: rotateZ(-15deg);
+    right: 10%;
+  }
+}
+
+.video-section__container {
+  align-items: center;
+}

@@ -3,7 +3,8 @@
     const ORDER_ID = 8;
     const sections = document.querySelectorAll('.section');
     let isScrolled = false;
-
+    const md = new MobileDetect(window.navigator.userAgent);
+    const isMobile = md.mobile();
 
     document.addEventListener('wheel', event => {
       scrollPage(event);
@@ -14,20 +15,20 @@
 
       if (tagName!=='input' && tagName !== 'textarea') {
         const activeSection = document.querySelector('.section--active');
-      if (!activeSection){
-        return;
-      }
-      const activeSectionId = parseInt(activeSection.getAttribute('data-slide-id'));
-      if (event.key === 'PageDown' ||  event.key === 'ArrowDown'){
-        if (activeSectionId < sections.length) {
-          moveSectionTo(activeSection, activeSectionId);
+        if (!activeSection){
+          return;
         }
-      }
-      else if(event.key === 'PageUp' ||  event.key === 'ArrowUp'){
-        if (activeSectionId > 1) {
-          moveSectionTo(activeSection, activeSectionId - 2);
+        const activeSectionId = parseInt(activeSection.getAttribute('data-slide-id'));
+        if (event.key === 'PageDown' ||  event.key === 'ArrowDown'){
+          if (activeSectionId < sections.length) {
+            moveSectionTo(activeSection, activeSectionId);
+          }
         }
-      }
+        else if(event.key === 'PageUp' ||  event.key === 'ArrowUp'){
+          if (activeSectionId > 1) {
+            moveSectionTo(activeSection, activeSectionId - 2);
+          }
+        }
       }
     })
 
@@ -49,6 +50,26 @@
       })
     }
 
+    const popUpMenu = document.querySelector('#popupMenu');
+    if (popUpMenu){
+      popUpMenu.addEventListener('click', event => {
+      event.preventDefault();
+      const activeMenuItem = document.querySelector('.menu-popup__item--active');
+      activeMenuItem.classList.remove('menu-popup__item--active');
+
+      const targetMenuItem = event.target.parentElement;
+      const targetMenuItemId = parseInt(targetMenuItem.getAttribute('data-slide-to'));
+      targetMenuItem.classList.add('menu-popup__item--active');
+      const activeSection = document.querySelector('.section--active');
+      moveSectionTo(activeSection, targetMenuItemId - 1);
+      sincSideMenuWith(targetMenuItemId);
+
+      popUpMenu.classList.toggle('menu-popup--active');
+
+      document.querySelector('#menuOpenBtn').classList.toggle('button-togle--cross');
+    })
+    }
+
     const sideMenu = document.querySelector('#side-menu');
     if (sideMenu){
       sideMenu.addEventListener('click', event => {
@@ -64,9 +85,10 @@
       })
     }
 
-    const orderBtn = document.querySelector('#order-btn');
-    if (orderBtn){
-      orderBtn.addEventListener('click', event => {
+    const orderBtns = document.querySelectorAll('.order-btn');
+    if (orderBtns){
+      for (let i = 0; i < orderBtns.length; i++){
+        orderBtns[i].addEventListener('click', event => {
         event.preventDefault();
         const activeMenuItem = document.querySelector('.side-menu__item--active');
         activeMenuItem.classList.remove('side-menu__item--active');
@@ -75,6 +97,7 @@
         const activeSection = document.querySelector('.section--active');
         moveSectionTo(activeSection, ORDER_ID - 1);
       })
+      }
     }
 
     function scrollPage(event) {
@@ -121,6 +144,36 @@
       const targetMenuItem = document.querySelector(`.side-menu__item:nth-of-type(${activeSectionId})`);
       targetMenuItem.classList.add('side-menu__item--active');
     };
+    // Для мобильных устройств
+    if (isMobile){
+      $('.wrapper').on('touchmove', evt => {
+      evt.preventDefault();
+      })
+
+      $("body").swipe( {
+        swipe:function(event, direction) {
+          const activeSection = document.querySelector('.section--active');
+          if (!activeSection){
+            return;
+          }
+          const activeSectionId = parseInt(activeSection.getAttribute('data-slide-id'));
+
+          switch(direction){
+            case 'down':
+              if (activeSectionId > 1) {
+                moveSectionTo(activeSection, activeSectionId - 2);
+              }
+              break
+            case 'up':
+              if (activeSectionId < sections.length) {
+                moveSectionTo(activeSection, activeSectionId);
+              }
+              break 
+          }  
+        }
+      });
+    }
+    
 
   });
 })();

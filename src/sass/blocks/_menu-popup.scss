@@ -28,10 +28,14 @@
     display: flex;
     align-items: flex-start;
     padding-top: 17%;
-    
+
 
     @include mq-small {
       padding-top: 27%;
     }
   }
+}
+
+.menu-popup__item--active {
+  color: $hover-text-color;
 }
