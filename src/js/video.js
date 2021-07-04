@@ -9,10 +9,9 @@ $(function(){
   let durationInterval;
 
 
-  $('#video').on('loadeddata', ()=> {
+  player.onloadeddata = function(){
     initPlayer();
-
-  });
+  }
 
   playerWrap.on('click', (event)=>{
       play();
@@ -74,7 +73,6 @@ $(function(){
     soundVolume.max = 1.0;
     soundVolume.step = 0.1;
     soundVolume.value = player.volume;
-    console.log(soundVolume.value);
     updateVolume(soundVolume.value, soundVolume.max);
   }
 
