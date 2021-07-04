@@ -8,56 +8,60 @@ $(function(){
   let totalDuration = 0; 
   let durationInterval;
 
-  initPlayer();
 
-  playerWrap.on('click', (event)=>{
-    play();
-  });
+  $('#video').on('loadeddata', ()=> {
+    initPlayer();
 
-  durationBtn.on('click', (event)=>{
-    play();
-  });
+    playerWrap.on('click', (event)=>{
+      play();
+    });
 
-  soundBtn.on('click', (event) => {
-    mute();
-  });
+    durationBtn.on('click', (event)=>{
+      play();
+    });
 
-  player.onplay = ()=>{
+    soundBtn.on('click', (event) => {
+      mute();
+    });
+
+    player.onplay = ()=>{
     $(playerWrap).find('.video__player-run').addClass('play');
-    durationBtn.addClass('play');
-    durationInterval = setInterval(() => {
+      durationBtn.addClass('play');
+      durationInterval = setInterval(() => {
+        updateDurationLength(player.currentTime);
+      }, 1000/60);
+    }
+
+    player.onpause = ()=>{
+      if (durationInterval){
+        clearInterval(durationInterval)
+      };
+
+      $(playerWrap).find('.video__player-run').removeClass('play');
+      durationBtn.removeClass('play');
+    }
+
+    $('#durationLength').on('input', (event)=>{
+      player.currentTime = $('#durationLength').val() * totalDuration / 100;
       updateDurationLength(player.currentTime);
-    }, 1000/60);
-    
-  }
+    })
 
-  player.onpause = ()=>{
-    if (durationInterval){
-      clearInterval(durationInterval)
-    };
+    $('#soundVolume').on('input', (event)=>{
+      const curVolume =$('#soundVolume').val();
+      if(curVolume == 0) {
+        $(soundBtn).addClass('mute');
+        player.muted = true;
+      }
+      else{
+        $(soundBtn).removeClass('mute');
+        player.muted = false;
+      }
+      player.volume = $('#soundVolume').val();
+      updateVolume(player.volume, soundVolume.max);
+    })
 
-    $(playerWrap).find('.video__player-run').removeClass('play');
-    durationBtn.removeClass('play');
-  }
+  });
 
-  $('#durationLength').on('input', (event)=>{
-    player.currentTime = $('#durationLength').val() * totalDuration / 100;
-    updateDurationLength(player.currentTime);
-  })
-
-  $('#soundVolume').on('input', (event)=>{
-    const curVolume =$('#soundVolume').val();
-    if(curVolume == 0) {
-      $(soundBtn).addClass('mute');
-      player.muted = true;
-    }
-    else{
-      $(soundBtn).removeClass('mute');
-      player.muted = false;
-    }
-    player.volume = $('#soundVolume').val();
-    updateVolume(player.volume, soundVolume.max);
-  })
 
   function initPlayer(){
     totalDuration = player.duration;
@@ -71,6 +75,7 @@ $(function(){
     soundVolume.max = 1.0;
     soundVolume.step = 0.1;
     soundVolume.value = player.volume;
+    console.log(soundVolume.value);
     updateVolume(soundVolume.value, soundVolume.max);
   }
 
