@@ -12,7 +12,9 @@ $(function(){
   $('#video').on('loadeddata', ()=> {
     initPlayer();
 
-    playerWrap.on('click', (event)=>{
+  });
+
+  playerWrap.on('click', (event)=>{
       play();
     });
 
@@ -24,7 +26,7 @@ $(function(){
       mute();
     });
 
-    player.onplay = ()=>{
+  player.onplay = ()=>{
     $(playerWrap).find('.video__player-run').addClass('play');
       durationBtn.addClass('play');
       durationInterval = setInterval(() => {
@@ -59,9 +61,6 @@ $(function(){
       player.volume = $('#soundVolume').val();
       updateVolume(player.volume, soundVolume.max);
     })
-
-  });
-
 
   function initPlayer(){
     totalDuration = player.duration;
