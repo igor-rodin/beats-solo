@@ -175,6 +175,10 @@
 
       $("body").swipe( {
         swipe:function(event, direction) {
+          if (document.body.classList.contains('popup-shown')){
+            return;
+          }
+
           const activeSection = document.querySelector('.section--active');
           if (!activeSection){
             return;
