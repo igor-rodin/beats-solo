@@ -45,7 +45,6 @@ $(function(){
     }
     
     const innerText = wrapText.find('.color-item__text');
-    console.log('innerText:', innerText);
     if ($(document).width() <= SMALL_SIZE) {
       wrapText.addClass('color-item__toggle-text--mobile');
       

@@ -94,11 +94,11 @@
     closeBtn.textContent = btnText;
     closeBtn.addEventListener('click', event => {
       document.body.removeChild(template);
-      // document.body.style.overflow = "";
+      document.body.classList.remove('popup-shown');
     })
     
     document.body.appendChild(template);
-    // document.body.style.overflow = "hidden";    
+    document.body.classList.add('popup-shown');    
   };
 
 })();
