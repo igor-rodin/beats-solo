@@ -1,7 +1,7 @@
 .advantages-section {
   text-align: center;
 
-  @include mq-small {
+  @include mq-medium {
     padding-left: px2rem(8);
   }
 

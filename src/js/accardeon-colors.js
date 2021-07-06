@@ -1,9 +1,13 @@
 $(function(){
+  const SMALL_SIZE = 480;
   const MEDIUM_SIZE = 768;
   const DESCKTOP_WIDTH = 524;
+  const itemWidth = $('.color-item__toggle').width();
+
+  const md = new MobileDetect(window.navigator.userAgent);
+  const isMobile = md.mobile();
 
   const getWrapWidth = (window) => {
-    const itemWidth = $('.color-item__toggle').width();
     const allItemsWidth = $('.colors__item').length  * itemWidth;
     
     if (window.width() > MEDIUM_SIZE) {
@@ -30,6 +34,7 @@ $(function(){
     const targetColorItem = event.target.closest('.colors__item');
 
     $(targetColorItem).toggleClass('colors__item--active');
+    const idxTargerItem = $(targetColorItem).index();
     
 
     const wrapText = $(targetColorItem).find('.color-item__toggle-text');
@@ -40,7 +45,14 @@ $(function(){
       toggleSectionHeader($('.section__title--colors'));
     }
     
+    if ($(document).width() <= SMALL_SIZE) {
+      wrapText.addClass('color-item__toggle-text--mobile');
+      if (!isMobile){
+        wrapText.find('.color-item__text').css({'left': `-${(idxTargerItem + 1) * itemWidth}px`, 'padding-right':'125%'});
+      } 
+    }
     activeColorItem.find('.color-item__toggle-text').width(0);
+    activeColorItem.find('.color-item__toggle-text').removeClass('color-item__toggle-text--mobile');
     activeColorItem.removeClass('colors__item--active');
   })
 });

@@ -6,11 +6,19 @@
     const md = new MobileDetect(window.navigator.userAgent);
     const isMobile = md.mobile();
 
+
     document.addEventListener('wheel', event => {
+      if (document.body.classList.contains('popup-shown')){
+        return;
+      }
       scrollPage(event);
     });
 
     document.addEventListener('keydown', event => {
+      if (document.body.classList.contains('popup-shown')){
+        return;
+      }      
+      
       const tagName = event.target.tagName.toLowerCase();
 
       if (tagName!=='input' && tagName !== 'textarea') {
@@ -38,6 +46,11 @@
     if (mainMenu){
       mainMenu.addEventListener('click', event => {
         event.preventDefault();
+
+        if (event.target.className === 'menu__list') {
+          return;
+        };
+
         const activeMenuItem = document.querySelector('.menu__item--active');
         activeMenuItem.classList.remove('menu__item--active');
 
@@ -54,6 +67,11 @@
     if (popUpMenu){
       popUpMenu.addEventListener('click', event => {
       event.preventDefault();
+
+      if (event.target.className !== 'menu__link') {
+        return;
+      };
+
       const activeMenuItem = document.querySelector('.menu-popup__item--active');
       activeMenuItem.classList.remove('menu-popup__item--active');
 
@@ -74,6 +92,11 @@
     if (sideMenu){
       sideMenu.addEventListener('click', event => {
         event.preventDefault();
+
+        if (event.target.className === 'side-menu__list') {
+          return;
+        };
+
         const activeMenuItem = document.querySelector('.side-menu__item--active');
         activeMenuItem.classList.remove('side-menu__item--active');
 
@@ -147,7 +170,7 @@
     // Для мобильных устройств
     if (isMobile){
       $('.wrapper').on('touchmove', evt => {
-      evt.preventDefault();
+        evt.preventDefault();
       })
 
       $("body").swipe( {

@@ -6,5 +6,7 @@
     popupMenu.classList.toggle('menu-popup--active');
 
     openBtn.classList.toggle('button-togle--cross');
+
+    document.body.classList.toggle('popup-shown');
   });
 })();

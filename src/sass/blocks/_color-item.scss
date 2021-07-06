@@ -35,10 +35,28 @@
   overflow: hidden;
   background-color: rgba(51, 53, 55, 0.9);
   backdrop-filter: blur(10px);
+
+  &--mobile {
+    overflow: visible;
+    z-index: 10;
+
+    .color-item__text {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(51, 53, 55, 0.6);
+      padding: px2rem(30);
+      padding-top: px2rem(58);
+      padding-right: 30%;
+    }
+  }
 }
 
 .color-item__text {
   width: px2rem(524);
   padding: px2rem(30) px2rem(54) 0 px2rem(38);
   line-height: 1.5;
+
 }

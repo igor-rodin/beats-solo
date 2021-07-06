@@ -1,13 +1,13 @@
 .team__item {
   flex: 1;
-  min-height: 55vh; 
+  min-height: 55vh;
 
   @include mq-medium {
-    margin-bottom: px2rem(4);
+    margin-bottom: px2rem(10);
     min-height: auto;
   }
 
   @include mq-small {
-    margin-bottom: 0;
+    margin-bottom: px2rem(8);
   }
 }

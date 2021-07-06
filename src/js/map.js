@@ -16,13 +16,23 @@ $(function(){
         [55.743083, 37.580838],
       ]; 
 
+      let iconSize = {
+        width: 58,
+        height: 73
+      };
+
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        iconSize.width = 43;
+        iconSize.height = 55;
+      }
+
       const markers = new ymaps.GeoObjectCollection({}, {
         draggable: false,
         iconLayout: 'default#image',
         iconImageHref: './images/icons/sprite.svg#marker',
         iconImageClipRect: [[0,100], [76, 195]],
-        iconImageSize: [58, 73],
-        iconImageOffset: [-29, -73]
+        iconImageSize: [iconSize.width, iconSize.height],
+        iconImageOffset: [-Math.floor(iconSize.width/2), -iconSize.height]
       });
 
       markerCoords.forEach(coord => {
