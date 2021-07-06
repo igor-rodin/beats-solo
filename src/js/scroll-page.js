@@ -85,6 +85,7 @@
       popUpMenu.classList.toggle('menu-popup--active');
 
       document.querySelector('#menuOpenBtn').classList.toggle('button-togle--cross');
+      document.body.classList.remove('popup-shown');
     })
     }
 
