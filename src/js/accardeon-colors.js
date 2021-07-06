@@ -47,11 +47,14 @@ $(function(){
     
     if ($(document).width() <= SMALL_SIZE) {
       wrapText.addClass('color-item__toggle-text--mobile');
-      if (!isMobile){
-        wrapText.find('.color-item__text').css({'left': `-${(idxTargerItem + 1) * itemWidth}px`, 'padding-right':'125%'});
-      } 
+      const textWidth = $(document).width() - itemWidth;
+      wrapText.find('.color-item__text').width(textWidth);
+      // if (!isMobile){
+      //   wrapText.find('.color-item__text').css({'left': `-${(idxTargerItem + 1) * itemWidth}px`, 'padding-right':'125%'});
+      // } 
     }
     activeColorItem.find('.color-item__toggle-text').width(0);
+    activeColorItem.find('.color-item__text').width(0);
     activeColorItem.find('.color-item__toggle-text').removeClass('color-item__toggle-text--mobile');
     activeColorItem.removeClass('colors__item--active');
   })
