@@ -52,10 +52,10 @@ $(function(){
       const pR = parseInt(innerText.css('padding-right'));
       const textWidth = $(document).width() - itemWidth - pL - pR;
       innerText.width(textWidth);
+      activeColorItem.find('.color-item__text').width(0);
+      activeColorItem.find('.color-item__toggle-text').removeClass('color-item__toggle-text--mobile');
     }
     activeColorItem.find('.color-item__toggle-text').width(0);
-    activeColorItem.find('.color-item__text').width(0);
-    activeColorItem.find('.color-item__toggle-text').removeClass('color-item__toggle-text--mobile');
     activeColorItem.removeClass('colors__item--active');
   })
 });
