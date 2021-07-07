@@ -23,6 +23,8 @@
   }
 
   &--active {
-    order: -1;
+    @include mq-small {
+      order: -1;
+    }
   }
 }
